@@ -29,154 +29,214 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            panel1 = new Panel();
-            label1 = new Label();
             panel2 = new Panel();
+            pictureBox1 = new PictureBox();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             label2 = new Label();
-            label3 = new Label();
             button1 = new Button();
-            label4 = new Label();
-            pictureBox1 = new PictureBox();
-            panel1.SuspendLayout();
+            panel3 = new Panel();
+            pictureBox4 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            checkBox1 = new CheckBox();
+            pictureBox5 = new PictureBox();
+            label1 = new Label();
+            panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.BurlyWood;
-            panel1.Controls.Add(label1);
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(275, 61);
-            panel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Sitka Small", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(35, 19);
-            label1.Name = "label1";
-            label1.Size = new Size(199, 28);
-            label1.TabIndex = 4;
-            label1.Text = "Furry And Friends";
-            label1.Click += label1_Click;
             // 
             // panel2
             // 
-            panel2.BackColor = Color.BurlyWood;
-            panel2.Location = new Point(0, 330);
+            panel2.BackColor = Color.PeachPuff;
+            panel2.Controls.Add(pictureBox1);
+            panel2.Location = new Point(22, 119);
+            panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
-            panel2.Size = new Size(275, 41);
+            panel2.Size = new Size(368, 356);
             panel2.TabIndex = 1;
+            panel2.Paint += panel2_Paint;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(3, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(362, 350);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(70, 148);
+            textBox1.BackColor = Color.PeachPuff;
+            textBox1.Location = new Point(479, 286);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(138, 23);
+            textBox1.Size = new Size(238, 27);
             textBox1.TabIndex = 2;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(70, 226);
+            textBox2.BackColor = Color.PeachPuff;
+            textBox2.Location = new Point(479, 359);
+            textBox2.Margin = new Padding(3, 4, 3, 4);
             textBox2.Name = "textBox2";
             textBox2.PasswordChar = '*';
-            textBox2.Size = new Size(138, 23);
+            textBox2.Size = new Size(238, 27);
             textBox2.TabIndex = 3;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(60, 130);
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.ButtonHighlight;
+            label2.Location = new Point(526, 262);
             label2.Name = "label2";
-            label2.Size = new Size(63, 15);
+            label2.Size = new Size(148, 20);
             label2.TabIndex = 5;
-            label2.Text = "Username:\r\n";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(63, 208);
-            label3.Name = "label3";
-            label3.Size = new Size(60, 15);
-            label3.TabIndex = 6;
-            label3.Text = "Password:";
+            label2.Text = "Enter the Username";
+            label2.Click += label2_Click;
             // 
             // button1
             // 
-            button1.BackColor = Color.SaddleBrown;
-            button1.ForeColor = SystemColors.ButtonFace;
-            button1.Location = new Point(101, 277);
+            button1.BackColor = Color.PeachPuff;
+            button1.ForeColor = SystemColors.ActiveCaptionText;
+            button1.Location = new Point(563, 429);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(86, 31);
             button1.TabIndex = 7;
-            button1.Text = "CONFIRM";
+            button1.Text = "LOGIN";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
-            // label4
+            // panel3
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.SaddleBrown;
-            label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = SystemColors.ButtonFace;
-            label4.Location = new Point(105, 92);
-            label4.Name = "label4";
-            label4.Size = new Size(71, 25);
-            label4.TabIndex = 8;
-            label4.Text = "LOGIN";
+            panel3.BackColor = Color.PeachPuff;
+            panel3.Controls.Add(pictureBox4);
+            panel3.Controls.Add(pictureBox2);
+            panel3.Controls.Add(pictureBox3);
+            panel3.Location = new Point(22, 19);
+            panel3.Margin = new Padding(3, 4, 3, 4);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(763, 85);
+            panel3.TabIndex = 9;
             // 
-            // pictureBox1
+            // pictureBox4
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-50, 19);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(367, 380);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 9;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(3, 12);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(146, 62);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 2;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(127, 3);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(500, 500);
+            pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox2.TabIndex = 0;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(617, 12);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(146, 62);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 1;
+            pictureBox3.TabStop = false;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            checkBox1.ForeColor = SystemColors.ButtonHighlight;
+            checkBox1.Location = new Point(478, 392);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(125, 21);
+            checkBox1.TabIndex = 10;
+            checkBox1.Text = "Show Password";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(526, 118);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(148, 133);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 11;
+            pictureBox5.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.Location = new Point(526, 329);
+            label1.Name = "label1";
+            label1.Size = new Size(144, 20);
+            label1.TabIndex = 12;
+            label1.Text = "Enter the Password";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoValidate = AutoValidate.EnablePreventFocusChange;
-            BackColor = Color.Bisque;
-            ClientSize = new Size(275, 352);
-            Controls.Add(label4);
+            BackColor = Color.Sienna;
+            ClientSize = new Size(811, 503);
+            Controls.Add(label1);
+            Controls.Add(pictureBox5);
+            Controls.Add(checkBox1);
+            Controls.Add(panel3);
             Controls.Add(button1);
-            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(panel2);
-            Controls.Add(panel1);
-            Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Panel panel1;
         private Panel panel2;
         private TextBox textBox1;
         private TextBox textBox2;
         private Label label2;
-        private Label label3;
         private Button button1;
-        private Label label4;
-        private Label label1;
+        private Panel panel3;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox4;
+        private CheckBox checkBox1;
+        private PictureBox pictureBox5;
+        private Label label1;
     }
 }

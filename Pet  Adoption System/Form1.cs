@@ -26,12 +26,13 @@ namespace Pet__Adoption_System
             }
 
             else if (textBox1.Text.Equals("admin", StringComparison.OrdinalIgnoreCase) && textBox2.Text.Equals("password", StringComparison.OrdinalIgnoreCase))
-            {    MessageBoxIcon ikun = MessageBoxIcon.Information;
+            {
+                MessageBoxIcon ikun = MessageBoxIcon.Information;
                 MessageBox.Show("Welcome to Furry and Friends!!", "Information", MessageBoxButtons.OK, ikun);
                 Form2 form2 = new Form2();
                 form2.Show();
                 this.Hide();
-            
+
             }
             else
             {
@@ -48,7 +49,27 @@ namespace Pet__Adoption_System
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-           
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
