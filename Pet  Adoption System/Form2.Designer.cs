@@ -29,292 +29,575 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            panel1 = new Panel();
-            panel8 = new Panel();
-            pictureBox1 = new PictureBox();
-            label8 = new Label();
-            label7 = new Label();
-            pictureBox2 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox3 = new PictureBox();
             panel2 = new Panel();
+            pictureBox2 = new PictureBox();
             label1 = new Label();
             panel3 = new Panel();
+            pictureBox3 = new PictureBox();
+            label3 = new Label();
             label2 = new Label();
             panel4 = new Panel();
-            label3 = new Label();
+            pictureBox5 = new PictureBox();
+            label9 = new Label();
             panel5 = new Panel();
+            pictureBox6 = new PictureBox();
             label4 = new Label();
             panel6 = new Panel();
+            pictureBox4 = new PictureBox();
             label5 = new Label();
             panel7 = new Panel();
+            pictureBox7 = new PictureBox();
             label6 = new Label();
-            pictureBox5 = new PictureBox();
-            panel1.SuspendLayout();
-            panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            label7 = new Label();
+            label8 = new Label();
+            panel1 = new Panel();
+            panel9 = new Panel();
+            pictureBox1 = new PictureBox();
+            panel10 = new Panel();
+            panel11 = new Panel();
+            panel12 = new Panel();
+            panel13 = new Panel();
+            label10 = new Label();
+            dataGridView1 = new DataGridView();
+            groupBox1 = new GroupBox();
+            button1 = new Button();
+            panel14 = new Panel();
+            panel15 = new Panel();
+            panel16 = new Panel();
+            panel17 = new Panel();
+            pictureBox8 = new PictureBox();
+            pictureBox9 = new PictureBox();
+            pictureBox10 = new PictureBox();
+            pictureBox11 = new PictureBox();
+            panel8 = new Panel();
+            panel18 = new Panel();
+            label11 = new Label();
+            label12 = new Label();
+            label13 = new Label();
+            label14 = new Label();
             panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel4.SuspendLayout();
-            panel5.SuspendLayout();
-            panel6.SuspendLayout();
-            panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            panel1.SuspendLayout();
+            panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            groupBox1.SuspendLayout();
+            panel14.SuspendLayout();
+            panel15.SuspendLayout();
+            panel16.SuspendLayout();
+            panel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            panel8.SuspendLayout();
+            panel18.SuspendLayout();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.PapayaWhip;
-            panel1.Controls.Add(panel8);
-            panel1.Controls.Add(pictureBox2);
-            panel1.Controls.Add(pictureBox4);
-            panel1.Controls.Add(pictureBox3);
-            panel1.Location = new Point(187, 35);
-            panel1.Margin = new Padding(3, 4, 3, 4);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(1050, 572);
-            panel1.TabIndex = 0;
-            // 
-            // panel8
-            // 
-            panel8.BackColor = Color.White;
-            panel8.Controls.Add(pictureBox5);
-            panel8.Controls.Add(pictureBox1);
-            panel8.Controls.Add(label8);
-            panel8.Controls.Add(label7);
-            panel8.Location = new Point(34, 21);
-            panel8.Margin = new Padding(3, 4, 3, 4);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(984, 133);
-            panel8.TabIndex = 0;
-            panel8.Paint += panel8_Paint;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(873, 9);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(98, 111);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Palatino Linotype", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(32, 17);
-            label8.Name = "label8";
-            label8.Size = new Size(269, 41);
-            label8.TabIndex = 5;
-            label8.Text = "Furry And Friends";
-            label8.Click += label8_Click;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe Print", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label7.Location = new Point(25, 67);
-            label7.Name = "label7";
-            label7.Size = new Size(527, 33);
-            label7.TabIndex = 0;
-            label7.Text = "\" Happiness Starts  With A Wag, A Pur, Or A Chirp\"\r\n";
-            label7.Click += label7_Click;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(742, 4);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(342, 569);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 10;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(373, 163);
-            pictureBox4.Margin = new Padding(3, 4, 3, 4);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(323, 368);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 9;
-            pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(-72, -19);
-            pictureBox3.Margin = new Padding(3, 4, 3, 4);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(423, 601);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 11;
-            pictureBox3.TabStop = false;
             // 
             // panel2
             // 
-            panel2.BackColor = Color.SaddleBrown;
+            panel2.BackColor = Color.FromArgb(128, 64, 64);
+            panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(label1);
-            panel2.Location = new Point(14, 89);
+            panel2.Location = new Point(16, 136);
             panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
             panel2.Size = new Size(144, 52);
             panel2.TabIndex = 0;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(4, 12);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(28, 33);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 1;
+            pictureBox2.TabStop = false;
+            // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Sitka Small", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Showcard Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ButtonFace;
-            label1.Location = new Point(33, 7);
+            label1.Location = new Point(26, 16);
             label1.Name = "label1";
-            label1.Size = new Size(89, 35);
+            label1.Size = new Size(116, 21);
             label1.TabIndex = 5;
-            label1.Text = "Home";
+            label1.Text = " Dashboard";
             label1.Click += label1_Click;
             // 
             // panel3
             // 
-            panel3.BackColor = Color.Peru;
+            panel3.BackColor = Color.FromArgb(128, 64, 64);
+            panel3.Controls.Add(pictureBox3);
+            panel3.Controls.Add(label3);
             panel3.Controls.Add(label2);
-            panel3.Location = new Point(14, 161);
+            panel3.Location = new Point(15, 210);
             panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
-            panel3.Size = new Size(144, 52);
+            panel3.Size = new Size(144, 48);
             panel3.TabIndex = 6;
             panel3.Click += label2_Click;
             panel3.Paint += panel3_Paint;
             // 
-            // label2
+            // pictureBox3
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Sitka Small", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = SystemColors.ButtonFace;
-            label2.Location = new Point(14, 7);
-            label2.Name = "label2";
-            label2.Size = new Size(127, 35);
-            label2.TabIndex = 5;
-            label2.Text = "Products";
-            label2.Click += label2_Click;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.Peru;
-            panel4.Controls.Add(label3);
-            panel4.Location = new Point(14, 240);
-            panel4.Margin = new Padding(3, 4, 3, 4);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(144, 52);
-            panel4.TabIndex = 6;
-            panel4.Click += label3_Click;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(5, 2);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(34, 43);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 8;
+            pictureBox3.TabStop = false;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Sitka Small", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Showcard Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.ButtonFace;
-            label3.Location = new Point(2, 8);
+            label3.Location = new Point(8, 15);
             label3.Name = "label3";
-            label3.Size = new Size(152, 35);
-            label3.TabIndex = 5;
-            label3.Text = "Employees";
-            label3.Click += label3_Click;
+            label3.Size = new Size(0, 21);
+            label3.TabIndex = 7;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Showcard Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = SystemColors.ButtonFace;
+            label2.Location = new Point(38, 14);
+            label2.Name = "label2";
+            label2.Size = new Size(104, 21);
+            label2.TabIndex = 6;
+            label2.Text = "Inventory";
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.FromArgb(128, 64, 64);
+            panel4.Controls.Add(pictureBox5);
+            panel4.Controls.Add(label9);
+            panel4.Location = new Point(15, 277);
+            panel4.Margin = new Padding(3, 4, 3, 4);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(144, 48);
+            panel4.TabIndex = 6;
+            panel4.Click += label3_Click;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+            pictureBox5.Location = new Point(8, 8);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(31, 33);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 11;
+            pictureBox5.TabStop = false;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Showcard Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.ForeColor = SystemColors.ButtonFace;
+            label9.Location = new Point(39, 15);
+            label9.Name = "label9";
+            label9.Size = new Size(89, 21);
+            label9.TabIndex = 8;
+            label9.Text = "Supplier";
+            label9.Click += label9_Click;
             // 
             // panel5
             // 
-            panel5.BackColor = Color.Peru;
+            panel5.BackColor = Color.FromArgb(128, 64, 64);
+            panel5.Controls.Add(pictureBox6);
             panel5.Controls.Add(label4);
-            panel5.Location = new Point(14, 323);
+            panel5.Location = new Point(14, 346);
             panel5.Margin = new Padding(3, 4, 3, 4);
             panel5.Name = "panel5";
             panel5.Size = new Size(144, 52);
             panel5.TabIndex = 6;
             // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(10, 12);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(31, 33);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 12;
+            pictureBox6.TabStop = false;
+            // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Sitka Small", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Showcard Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.ButtonFace;
-            label4.Location = new Point(10, 7);
+            label4.Location = new Point(42, 17);
             label4.Name = "label4";
-            label4.Size = new Size(137, 35);
-            label4.TabIndex = 5;
-            label4.Text = "Customer";
+            label4.Size = new Size(84, 21);
+            label4.TabIndex = 9;
+            label4.Text = "History";
             // 
             // panel6
             // 
-            panel6.BackColor = Color.Peru;
+            panel6.BackColor = Color.FromArgb(128, 64, 64);
+            panel6.Controls.Add(pictureBox4);
             panel6.Controls.Add(label5);
-            panel6.Location = new Point(14, 400);
+            panel6.Location = new Point(14, 417);
             panel6.Margin = new Padding(3, 4, 3, 4);
             panel6.Name = "panel6";
             panel6.Size = new Size(144, 52);
             panel6.TabIndex = 6;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(13, 12);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(31, 33);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 9;
+            pictureBox4.TabStop = false;
+            // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Sitka Small", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Font = new Font("Showcard Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.ForeColor = SystemColors.ButtonFace;
-            label5.Location = new Point(27, 7);
+            label5.Location = new Point(41, 17);
             label5.Name = "label5";
-            label5.Size = new Size(100, 35);
-            label5.TabIndex = 5;
-            label5.Text = "Billing";
+            label5.Size = new Size(86, 21);
+            label5.TabIndex = 10;
+            label5.Text = " Billings";
             // 
             // panel7
             // 
-            panel7.BackColor = Color.Peru;
+            panel7.BackColor = Color.FromArgb(128, 64, 64);
+            panel7.Controls.Add(pictureBox7);
             panel7.Controls.Add(label6);
-            panel7.Location = new Point(14, 477);
+            panel7.Location = new Point(14, 489);
             panel7.Margin = new Padding(3, 4, 3, 4);
             panel7.Name = "panel7";
             panel7.Size = new Size(144, 52);
             panel7.TabIndex = 7;
             // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(12, 10);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(31, 33);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 11;
+            pictureBox7.TabStop = false;
+            // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Sitka Small", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Font = new Font("Showcard Gothic", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = SystemColors.ButtonFace;
-            label6.Location = new Point(27, 7);
+            label6.Location = new Point(44, 16);
             label6.Name = "label6";
-            label6.Size = new Size(103, 35);
-            label6.TabIndex = 5;
+            label6.Size = new Size(77, 21);
+            label6.TabIndex = 11;
             label6.Text = "Logout";
             // 
-            // pictureBox5
+            // label7
             // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(760, 9);
-            pictureBox5.Margin = new Padding(3, 4, 3, 4);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(98, 111);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 7;
-            pictureBox5.TabStop = false;
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe Print", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = SystemColors.ButtonHighlight;
+            label7.Location = new Point(8, 10);
+            label7.Name = "label7";
+            label7.Size = new Size(492, 31);
+            label7.TabIndex = 0;
+            label7.Text = "\" Happiness Starts  With A Wag, A Pur, Or A Chirp\"\r\n";
+            label7.Click += label7_Click;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Imprint MT Shadow", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label8.Location = new Point(183, 20);
+            label8.Name = "label8";
+            label8.Size = new Size(287, 27);
+            label8.TabIndex = 5;
+            label8.Text = "🐾 Furry And Friends 🐾";
+            label8.Click += label8_Click;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.PeachPuff;
+            panel1.Controls.Add(panel18);
+            panel1.Controls.Add(panel8);
+            panel1.Controls.Add(panel17);
+            panel1.Controls.Add(label8);
+            panel1.Controls.Add(panel16);
+            panel1.Controls.Add(panel15);
+            panel1.Controls.Add(panel14);
+            panel1.Controls.Add(groupBox1);
+            panel1.Controls.Add(dataGridView1);
+            panel1.Location = new Point(209, 29);
+            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1007, 568);
+            panel1.TabIndex = 0;
+            // 
+            // panel9
+            // 
+            panel9.BackColor = Color.PeachPuff;
+            panel9.Controls.Add(panel7);
+            panel9.Controls.Add(pictureBox1);
+            panel9.Controls.Add(panel2);
+            panel9.Controls.Add(panel6);
+            panel9.Controls.Add(panel3);
+            panel9.Controls.Add(panel4);
+            panel9.Controls.Add(panel5);
+            panel9.Location = new Point(26, 30);
+            panel9.Margin = new Padding(3, 4, 3, 4);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(174, 568);
+            panel9.TabIndex = 10;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(2, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(168, 130);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 10;
+            pictureBox1.TabStop = false;
+            // 
+            // panel10
+            // 
+            panel10.BackColor = Color.FromArgb(192, 255, 255);
+            panel10.Location = new Point(12, 9);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(1223, 10);
+            panel10.TabIndex = 11;
+            // 
+            // panel11
+            // 
+            panel11.BackColor = Color.FromArgb(192, 255, 255);
+            panel11.Location = new Point(11, 609);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(1224, 12);
+            panel11.TabIndex = 12;
+            // 
+            // panel12
+            // 
+            panel12.BackColor = Color.FromArgb(192, 255, 255);
+            panel12.Location = new Point(7, 9);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(10, 612);
+            panel12.TabIndex = 10;
+            // 
+            // panel13
+            // 
+            panel13.BackColor = Color.FromArgb(192, 255, 255);
+            panel13.Location = new Point(1225, 9);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(10, 609);
+            panel13.TabIndex = 6;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.ForeColor = SystemColors.ButtonHighlight;
+            label10.Location = new Point(28, 91);
+            label10.Name = "label10";
+            label10.Size = new Size(118, 20);
+            label10.TabIndex = 1;
+            label10.Text = "BEST CATEGORY";
+            label10.Click += label10_Click;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(16, 213);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(973, 336);
+            dataGridView1.TabIndex = 2;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // groupBox1
+            // 
+            groupBox1.BackColor = Color.PeachPuff;
+            groupBox1.BackgroundImage = (Image)resources.GetObject("groupBox1.BackgroundImage");
+            groupBox1.Controls.Add(button1);
+            groupBox1.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox1.ForeColor = Color.Black;
+            groupBox1.Location = new Point(808, 98);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(171, 68);
+            groupBox1.TabIndex = 3;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "For Walk-in";
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Palatino Linotype", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(45, 26);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 0;
+            button1.Text = "Walk-ins";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // panel14
+            // 
+            panel14.BackColor = Color.FromArgb(64, 0, 0);
+            panel14.Controls.Add(label10);
+            panel14.Controls.Add(pictureBox11);
+            panel14.Location = new Point(25, 71);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(175, 125);
+            panel14.TabIndex = 4;
+            // 
+            // panel15
+            // 
+            panel15.BackColor = Color.FromArgb(64, 0, 0);
+            panel15.Controls.Add(label12);
+            panel15.Controls.Add(pictureBox8);
+            panel15.Location = new Point(222, 71);
+            panel15.Name = "panel15";
+            panel15.Size = new Size(172, 125);
+            panel15.TabIndex = 5;
+            // 
+            // panel16
+            // 
+            panel16.BackColor = Color.FromArgb(64, 0, 0);
+            panel16.Controls.Add(label13);
+            panel16.Controls.Add(pictureBox9);
+            panel16.Location = new Point(420, 71);
+            panel16.Name = "panel16";
+            panel16.Size = new Size(172, 125);
+            panel16.TabIndex = 5;
+            // 
+            // panel17
+            // 
+            panel17.BackColor = Color.FromArgb(64, 0, 0);
+            panel17.Controls.Add(label14);
+            panel17.Controls.Add(pictureBox10);
+            panel17.Location = new Point(617, 71);
+            panel17.Name = "panel17";
+            panel17.Size = new Size(172, 125);
+            panel17.TabIndex = 5;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Location = new Point(28, 16);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(125, 62);
+            pictureBox8.TabIndex = 2;
+            pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Location = new Point(24, 18);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(125, 62);
+            pictureBox9.TabIndex = 3;
+            pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.Location = new Point(25, 18);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(125, 62);
+            pictureBox10.TabIndex = 4;
+            pictureBox10.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.Location = new Point(23, 15);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(125, 62);
+            pictureBox11.TabIndex = 3;
+            pictureBox11.TabStop = false;
+            // 
+            // panel8
+            // 
+            panel8.BackColor = Color.FromArgb(128, 64, 64);
+            panel8.Controls.Add(label7);
+            panel8.Location = new Point(483, 9);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(506, 49);
+            panel8.TabIndex = 6;
+            // 
+            // panel18
+            // 
+            panel18.BackColor = Color.FromArgb(128, 64, 64);
+            panel18.Controls.Add(label11);
+            panel18.Location = new Point(18, 9);
+            panel18.Name = "panel18";
+            panel18.Size = new Size(157, 49);
+            panel18.TabIndex = 7;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe Print", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = SystemColors.ButtonHighlight;
+            label11.Location = new Point(12, 10);
+            label11.Name = "label11";
+            label11.Size = new Size(135, 31);
+            label11.TabIndex = 0;
+            label11.Text = "DASHBOARD";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.ForeColor = SystemColors.ButtonHighlight;
+            label12.Location = new Point(35, 91);
+            label12.Name = "label12";
+            label12.Size = new Size(112, 20);
+            label12.TabIndex = 4;
+            label12.Text = "BEST PRODUCT";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.ForeColor = SystemColors.ButtonHighlight;
+            label13.Location = new Point(39, 91);
+            label13.Name = "label13";
+            label13.Size = new Size(95, 20);
+            label13.TabIndex = 5;
+            label13.Text = "TOTAL SALES";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.ForeColor = SystemColors.ButtonHighlight;
+            label14.Location = new Point(5, 91);
+            label14.Name = "label14";
+            label14.Size = new Size(162, 20);
+            label14.TabIndex = 6;
+            label14.Text = "INVENTORY SUMMARY";
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.PeachPuff;
-            ClientSize = new Size(1266, 633);
-            Controls.Add(panel7);
-            Controls.Add(panel3);
-            Controls.Add(panel6);
-            Controls.Add(panel5);
-            Controls.Add(panel4);
-            Controls.Add(panel2);
+            BackColor = Color.FromArgb(64, 0, 0);
+            ClientSize = new Size(1246, 633);
+            Controls.Add(panel13);
+            Controls.Add(panel12);
+            Controls.Add(panel11);
+            Controls.Add(panel10);
+            Controls.Add(panel9);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 4, 3, 4);
@@ -322,51 +605,95 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";
             Load += Form2_Load;
-            panel1.ResumeLayout(false);
-            panel8.ResumeLayout(false);
-            panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel6.ResumeLayout(false);
             panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            groupBox1.ResumeLayout(false);
+            panel14.ResumeLayout(false);
+            panel14.PerformLayout();
+            panel15.ResumeLayout(false);
+            panel15.PerformLayout();
+            panel16.ResumeLayout(false);
+            panel16.PerformLayout();
+            panel17.ResumeLayout(false);
+            panel17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
+            panel18.ResumeLayout(false);
+            panel18.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
-
-        private Panel panel1;
         private Panel panel2;
         private Label label1;
         private Panel panel3;
-        private Label label2;
         private Panel panel4;
-        private Label label3;
         private Panel panel5;
-        private Label label4;
         private Panel panel6;
-        private Label label5;
         private Panel panel7;
-        private Label label6;
-        private Panel panel8;
-        private Label label7;
         private Label label8;
+        private Label label7;
+        private Panel panel1;
+        private Panel panel9;
+        private Panel panel13;
+        private Panel panel10;
+        private Panel panel11;
+        private Panel panel12;
         private PictureBox pictureBox1;
-        private PictureBox pictureBox4;
+        private Label label2;
+        private Label label3;
+        private Label label9;
+        private Label label4;
+        private Label label5;
+        private Label label6;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox5;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox7;
+        private Label label10;
+        private DataGridView dataGridView1;
+        private GroupBox groupBox1;
+        private Button button1;
+        private Panel panel17;
+        private Panel panel16;
+        private Panel panel15;
+        private Panel panel14;
+        private PictureBox pictureBox10;
+        private PictureBox pictureBox9;
+        private PictureBox pictureBox8;
+        private PictureBox pictureBox11;
+        private Panel panel18;
+        private Label label11;
+        private Panel panel8;
+        private Label label12;
+        private Label label14;
+        private Label label13;
     }
 }

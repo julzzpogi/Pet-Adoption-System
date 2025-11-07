@@ -42,6 +42,11 @@
             checkBox1 = new CheckBox();
             pictureBox5 = new PictureBox();
             label1 = new Label();
+            panel1 = new Panel();
+            panel5 = new Panel();
+            panel4 = new Panel();
+            panel8 = new Panel();
+            panel7 = new Panel();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel3.SuspendLayout();
@@ -49,13 +54,14 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel2
             // 
             panel2.BackColor = Color.PeachPuff;
             panel2.Controls.Add(pictureBox1);
-            panel2.Location = new Point(22, 119);
+            panel2.Location = new Point(22, 117);
             panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
             panel2.Size = new Size(368, 356);
@@ -65,7 +71,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(3, 3);
+            pictureBox1.Location = new Point(4, 3);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(362, 350);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -122,7 +128,7 @@
             panel3.Controls.Add(pictureBox4);
             panel3.Controls.Add(pictureBox2);
             panel3.Controls.Add(pictureBox3);
-            panel3.Location = new Point(22, 19);
+            panel3.Location = new Point(22, 23);
             panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
             panel3.Size = new Size(763, 85);
@@ -191,13 +197,56 @@
             label1.TabIndex = 12;
             label1.Text = "Enter the Password";
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(192, 255, 255);
+            panel1.Controls.Add(panel5);
+            panel1.Location = new Point(6, 12);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(10, 479);
+            panel1.TabIndex = 13;
+            // 
+            // panel5
+            // 
+            panel5.Location = new Point(0, -8);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(795, 10);
+            panel5.TabIndex = 15;
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.FromArgb(192, 255, 255);
+            panel4.Location = new Point(791, 12);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(10, 479);
+            panel4.TabIndex = 14;
+            // 
+            // panel8
+            // 
+            panel8.BackColor = Color.FromArgb(192, 255, 255);
+            panel8.Location = new Point(6, 484);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(795, 10);
+            panel8.TabIndex = 17;
+            // 
+            // panel7
+            // 
+            panel7.BackColor = Color.FromArgb(192, 255, 255);
+            panel7.Location = new Point(6, 7);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(795, 10);
+            panel7.TabIndex = 16;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoValidate = AutoValidate.EnablePreventFocusChange;
-            BackColor = Color.Sienna;
+            BackColor = Color.FromArgb(64, 0, 0);
             ClientSize = new Size(811, 503);
+            Controls.Add(panel7);
+            Controls.Add(panel8);
+            Controls.Add(panel4);
             Controls.Add(label1);
             Controls.Add(pictureBox5);
             Controls.Add(checkBox1);
@@ -207,6 +256,7 @@
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(panel2);
+            Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
@@ -220,6 +270,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -238,5 +289,10 @@
         private CheckBox checkBox1;
         private PictureBox pictureBox5;
         private Label label1;
+        private Panel panel1;
+        private Panel panel5;
+        private Panel panel4;
+        private Panel panel8;
+        private Panel panel7;
     }
 }

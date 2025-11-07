@@ -19,7 +19,7 @@ namespace Pet__Adoption_System
         public Form2()
         {
             InitializeComponent();
-            
+
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -92,6 +92,26 @@ namespace Pet__Adoption_System
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
