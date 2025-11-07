@@ -179,6 +179,7 @@ namespace Pet__Adoption_System
             Form4 form4 = new Form4();
             form4.Show();
             this.Hide();
+            //gawen mo dito ung inventory
         }
     }
 }
