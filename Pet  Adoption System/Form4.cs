@@ -134,7 +134,7 @@ namespace Pet__Adoption_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             SqlConnection conn = new SqlConnection(haha);
             conn.Open();
             SqlCommand sqlCommand = new SqlCommand("Insert into product_table (productName, productCategory, productQuantity,  productPrice) VALUES(@name, @category, @quantity, @price)", conn);
@@ -180,6 +180,11 @@ namespace Pet__Adoption_System
             {
                 MessageBox.Show("Please select a product to delete.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void panel11_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

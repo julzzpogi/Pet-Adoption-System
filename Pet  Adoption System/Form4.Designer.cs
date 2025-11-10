@@ -65,6 +65,10 @@
             panel5 = new Panel();
             pictureBox6 = new PictureBox();
             label13 = new Label();
+            panel10 = new Panel();
+            panel11 = new Panel();
+            panel12 = new Panel();
+            panel13 = new Panel();
             panel1.SuspendLayout();
             panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -92,10 +96,10 @@
             panel1.Controls.Add(button1);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(dataGridView1);
-            panel1.Location = new Point(195, 31);
+            panel1.Location = new Point(200, 34);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1050, 572);
+            panel1.Size = new Size(1044, 570);
             panel1.TabIndex = 16;
             panel1.Paint += panel1_Paint;
             // 
@@ -257,7 +261,7 @@
             panel9.Controls.Add(panel3);
             panel9.Controls.Add(panel4);
             panel9.Controls.Add(panel5);
-            panel9.Location = new Point(12, 31);
+            panel9.Location = new Point(19, 32);
             panel9.Margin = new Padding(3, 4, 3, 4);
             panel9.Name = "panel9";
             panel9.Size = new Size(174, 572);
@@ -476,12 +480,49 @@
             label13.TabIndex = 9;
             label13.Text = "History";
             // 
+            // panel10
+            // 
+            panel10.BackColor = Color.FromArgb(192, 255, 255);
+            panel10.Location = new Point(12, 12);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(1246, 10);
+            panel10.TabIndex = 18;
+            // 
+            // panel11
+            // 
+            panel11.BackColor = Color.FromArgb(192, 255, 255);
+            panel11.Location = new Point(15, 614);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(1243, 10);
+            panel11.TabIndex = 19;
+            panel11.Paint += panel11_Paint;
+            // 
+            // panel12
+            // 
+            panel12.BackColor = Color.FromArgb(192, 255, 255);
+            panel12.Location = new Point(5, 12);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(10, 612);
+            panel12.TabIndex = 18;
+            // 
+            // panel13
+            // 
+            panel13.BackColor = Color.FromArgb(192, 255, 255);
+            panel13.Location = new Point(1250, 12);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(10, 612);
+            panel13.TabIndex = 19;
+            // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 0, 0);
             ClientSize = new Size(1266, 633);
+            Controls.Add(panel13);
+            Controls.Add(panel12);
+            Controls.Add(panel11);
+            Controls.Add(panel10);
             Controls.Add(panel9);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
@@ -556,5 +597,9 @@
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private Label label13;
+        private Panel panel10;
+        private Panel panel11;
+        private Panel panel12;
+        private Panel panel13;
     }
 }
