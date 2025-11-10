@@ -115,5 +115,10 @@ namespace Pet__Adoption_System
         {
 
         }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

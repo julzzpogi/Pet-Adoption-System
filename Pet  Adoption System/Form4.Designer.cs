@@ -96,7 +96,7 @@
             panel1.Controls.Add(button1);
             panel1.Controls.Add(label7);
             panel1.Controls.Add(dataGridView1);
-            panel1.Location = new Point(200, 34);
+            panel1.Location = new Point(214, 34);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
             panel1.Size = new Size(1044, 570);
@@ -508,7 +508,7 @@
             // panel13
             // 
             panel13.BackColor = Color.FromArgb(192, 255, 255);
-            panel13.Location = new Point(1250, 12);
+            panel13.Location = new Point(1264, 12);
             panel13.Name = "panel13";
             panel13.Size = new Size(10, 612);
             panel13.TabIndex = 19;
@@ -518,7 +518,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 0, 0);
-            ClientSize = new Size(1266, 633);
+            ClientSize = new Size(1289, 633);
             Controls.Add(panel13);
             Controls.Add(panel12);
             Controls.Add(panel11);
