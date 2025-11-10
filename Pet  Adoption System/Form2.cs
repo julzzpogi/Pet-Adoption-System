@@ -137,5 +137,10 @@ namespace Pet__Adoption_System
             form5.Show();
             this.Hide();
         }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

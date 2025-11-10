@@ -74,7 +74,7 @@
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label2.Location = new Point(340, 25);
             label2.Name = "label2";
-            label2.Size = new Size(39, 15);
+            label2.Size = new Size(50, 20);
             label2.TabIndex = 4;
             label2.Text = "Filter:";
             // 
@@ -84,7 +84,7 @@
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label1.Location = new Point(20, 25);
             label1.Name = "label1";
-            label1.Size = new Size(48, 15);
+            label1.Size = new Size(59, 20);
             label1.TabIndex = 3;
             label1.Text = "Search:";
             // 
@@ -95,7 +95,7 @@
             comboBox1.Items.AddRange(new object[] { "All Items", "Active Only", "Inactive Only", "By Category" });
             comboBox1.Location = new Point(340, 45);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(180, 23);
+            comboBox1.Size = new Size(180, 28);
             comboBox1.TabIndex = 2;
             // 
             // textBox1
@@ -104,14 +104,14 @@
             textBox1.Location = new Point(20, 45);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Enter search term...";
-            textBox1.Size = new Size(300, 23);
+            textBox1.Size = new Size(300, 27);
             textBox1.TabIndex = 1;
             // 
             // dataGridView1
             // 
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.BackgroundColor = Color.White;
+            dataGridView1.BackgroundColor = Color.PeachPuff;
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.GridColor = Color.FromArgb(224, 224, 224);
@@ -119,6 +119,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersVisible = false;
+            dataGridView1.RowHeadersWidth = 51;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(500, 385);
             dataGridView1.TabIndex = 0;
@@ -137,7 +138,7 @@
             panel2.Controls.Add(dataGridView2);
             panel2.Location = new Point(600, 80);
             panel2.Name = "panel2";
-            panel2.Size = new Size(575, 500);
+            panel2.Size = new Size(627, 500);
             panel2.TabIndex = 1;
             // 
             // label5
@@ -146,7 +147,7 @@
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label5.Location = new Point(360, 25);
             label5.Name = "label5";
-            label5.Size = new Size(46, 15);
+            label5.Size = new Size(59, 20);
             label5.TabIndex = 8;
             label5.Text = "Field 3:";
             // 
@@ -156,7 +157,7 @@
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label4.Location = new Point(190, 25);
             label4.Name = "label4";
-            label4.Size = new Size(46, 15);
+            label4.Size = new Size(59, 20);
             label4.TabIndex = 7;
             label4.Text = "Field 2:";
             // 
@@ -166,7 +167,7 @@
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label3.Location = new Point(20, 25);
             label3.Name = "label3";
-            label3.Size = new Size(46, 15);
+            label3.Size = new Size(59, 20);
             label3.TabIndex = 6;
             label3.Text = "Field 1:";
             // 
@@ -176,7 +177,7 @@
             checkBox1.Font = new Font("Segoe UI", 9F);
             checkBox1.Location = new Point(516, 47);
             checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(59, 19);
+            checkBox1.Size = new Size(72, 24);
             checkBox1.TabIndex = 5;
             checkBox1.Text = "Active";
             checkBox1.UseVisualStyleBackColor = true;
@@ -186,7 +187,7 @@
             textBox4.BorderStyle = BorderStyle.FixedSingle;
             textBox4.Location = new Point(360, 45);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(150, 23);
+            textBox4.Size = new Size(150, 27);
             textBox4.TabIndex = 4;
             // 
             // textBox3
@@ -194,7 +195,7 @@
             textBox3.BorderStyle = BorderStyle.FixedSingle;
             textBox3.Location = new Point(190, 45);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(150, 23);
+            textBox3.Size = new Size(150, 27);
             textBox3.TabIndex = 3;
             // 
             // textBox2
@@ -202,14 +203,14 @@
             textBox2.BorderStyle = BorderStyle.FixedSingle;
             textBox2.Location = new Point(20, 45);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 23);
+            textBox2.Size = new Size(150, 27);
             textBox2.TabIndex = 2;
             // 
             // dataGridView2
             // 
             dataGridView2.AllowUserToAddRows = false;
             dataGridView2.AllowUserToDeleteRows = false;
-            dataGridView2.BackgroundColor = Color.White;
+            dataGridView2.BackgroundColor = Color.PeachPuff;
             dataGridView2.BorderStyle = BorderStyle.None;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.GridColor = Color.FromArgb(224, 224, 224);
@@ -217,8 +218,9 @@
             dataGridView2.Name = "dataGridView2";
             dataGridView2.ReadOnly = true;
             dataGridView2.RowHeadersVisible = false;
+            dataGridView2.RowHeadersWidth = 51;
             dataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView2.Size = new Size(535, 385);
+            dataGridView2.Size = new Size(584, 385);
             dataGridView2.TabIndex = 1;
             // 
             // button1
@@ -279,23 +281,23 @@
             // 
             // labelTitle
             // 
-            labelTitle.BackColor = Color.FromArgb(44, 62, 80);
+            labelTitle.BackColor = Color.PeachPuff;
             labelTitle.Dock = DockStyle.Top;
             labelTitle.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             labelTitle.ForeColor = Color.White;
             labelTitle.Location = new Point(0, 0);
             labelTitle.Name = "labelTitle";
-            labelTitle.Size = new Size(1200, 60);
+            labelTitle.Size = new Size(1257, 60);
             labelTitle.TabIndex = 6;
             labelTitle.Text = "Data Management System";
             labelTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // Form5
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(1200, 660);
+            BackColor = Color.FromArgb(64, 0, 0);
+            ClientSize = new Size(1257, 660);
             Controls.Add(labelTitle);
             Controls.Add(button4);
             Controls.Add(button3);
