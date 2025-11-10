@@ -199,7 +199,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(192, 255, 255);
+            panel1.BackColor = Color.Sienna;
             panel1.Controls.Add(panel5);
             panel1.Location = new Point(6, 12);
             panel1.Name = "panel1";
@@ -215,7 +215,7 @@
             // 
             // panel4
             // 
-            panel4.BackColor = Color.FromArgb(192, 255, 255);
+            panel4.BackColor = Color.Sienna;
             panel4.Location = new Point(791, 12);
             panel4.Name = "panel4";
             panel4.Size = new Size(10, 479);
@@ -223,7 +223,7 @@
             // 
             // panel8
             // 
-            panel8.BackColor = Color.FromArgb(192, 255, 255);
+            panel8.BackColor = Color.Sienna;
             panel8.Location = new Point(6, 484);
             panel8.Name = "panel8";
             panel8.Size = new Size(795, 10);
@@ -231,7 +231,7 @@
             // 
             // panel7
             // 
-            panel7.BackColor = Color.FromArgb(192, 255, 255);
+            panel7.BackColor = Color.Sienna;
             panel7.Location = new Point(6, 7);
             panel7.Name = "panel7";
             panel7.Size = new Size(795, 10);

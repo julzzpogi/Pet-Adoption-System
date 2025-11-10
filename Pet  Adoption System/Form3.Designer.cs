@@ -158,7 +158,7 @@
             // 
             // panel10
             // 
-            panel10.BackColor = Color.FromArgb(192, 255, 255);
+            panel10.BackColor = Color.Sienna;
             panel10.Location = new Point(11, 12);
             panel10.Name = "panel10";
             panel10.Size = new Size(1275, 11);
@@ -166,7 +166,7 @@
             // 
             // panel8
             // 
-            panel8.BackColor = Color.FromArgb(192, 255, 255);
+            panel8.BackColor = Color.Sienna;
             panel8.Location = new Point(11, 613);
             panel8.Name = "panel8";
             panel8.Size = new Size(1275, 11);
@@ -174,7 +174,7 @@
             // 
             // panel9
             // 
-            panel9.BackColor = Color.FromArgb(192, 255, 255);
+            panel9.BackColor = Color.Sienna;
             panel9.Location = new Point(9, 12);
             panel9.Name = "panel9";
             panel9.Size = new Size(10, 612);
@@ -379,7 +379,7 @@
             // 
             // panel12
             // 
-            panel12.BackColor = Color.FromArgb(192, 255, 255);
+            panel12.BackColor = Color.Sienna;
             panel12.Location = new Point(1277, 12);
             panel12.Name = "panel12";
             panel12.Size = new Size(10, 609);

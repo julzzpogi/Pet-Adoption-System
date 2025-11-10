@@ -68,6 +68,8 @@
             panel11 = new Panel();
             panel12 = new Panel();
             panel13 = new Panel();
+            label9 = new Label();
+            label15 = new Label();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel3.SuspendLayout();
@@ -378,6 +380,7 @@
             // panel15
             // 
             panel15.BackColor = Color.FromArgb(64, 0, 0);
+            panel15.Controls.Add(label15);
             panel15.Controls.Add(label12);
             panel15.Location = new Point(224, 69);
             panel15.Name = "panel15";
@@ -398,6 +401,7 @@
             // panel14
             // 
             panel14.BackColor = Color.FromArgb(64, 0, 0);
+            panel14.Controls.Add(label9);
             panel14.Controls.Add(label10);
             panel14.Location = new Point(27, 69);
             panel14.Name = "panel14";
@@ -408,11 +412,11 @@
             // 
             label10.AutoSize = true;
             label10.ForeColor = SystemColors.ButtonHighlight;
-            label10.Location = new Point(30, 37);
+            label10.Location = new Point(30, 39);
             label10.Name = "label10";
-            label10.Size = new Size(118, 20);
+            label10.Size = new Size(122, 20);
             label10.TabIndex = 1;
-            label10.Text = "BEST CATEGORY";
+            label10.Text = " BEST CATEGORY";
             label10.Click += label10_Click;
             // 
             // groupBox1
@@ -477,7 +481,7 @@
             // 
             // panel10
             // 
-            panel10.BackColor = Color.FromArgb(192, 255, 255);
+            panel10.BackColor = Color.Sienna;
             panel10.Location = new Point(11, 9);
             panel10.Name = "panel10";
             panel10.Size = new Size(1249, 11);
@@ -486,7 +490,7 @@
             // 
             // panel11
             // 
-            panel11.BackColor = Color.FromArgb(192, 255, 255);
+            panel11.BackColor = Color.Sienna;
             panel11.Location = new Point(11, 637);
             panel11.Name = "panel11";
             panel11.Size = new Size(1258, 11);
@@ -494,7 +498,7 @@
             // 
             // panel12
             // 
-            panel12.BackColor = Color.FromArgb(192, 255, 255);
+            panel12.BackColor = Color.Sienna;
             panel12.Location = new Point(7, 9);
             panel12.Name = "panel12";
             panel12.Size = new Size(10, 639);
@@ -502,11 +506,33 @@
             // 
             // panel13
             // 
-            panel13.BackColor = Color.FromArgb(192, 255, 255);
+            panel13.BackColor = Color.Sienna;
             panel13.Location = new Point(1259, 9);
             panel13.Name = "panel13";
             panel13.Size = new Size(10, 636);
             panel13.TabIndex = 6;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Stencil", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label9.ForeColor = SystemColors.ButtonHighlight;
+            label9.Location = new Point(64, 16);
+            label9.Name = "label9";
+            label9.Size = new Size(42, 20);
+            label9.TabIndex = 2;
+            label9.Text = "Dog";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Stencil", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label15.ForeColor = SystemColors.ButtonHighlight;
+            label15.Location = new Point(64, 16);
+            label15.Name = "label15";
+            label15.Size = new Size(43, 20);
+            label15.TabIndex = 3;
+            label15.Text = "pug";
             // 
             // Form2
             // 
@@ -602,5 +628,7 @@
         private Label label12;
         private Label label14;
         private Label label13;
+        private Label label15;
+        private Label label9;
     }
 }
