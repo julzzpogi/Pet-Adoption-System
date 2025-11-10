@@ -48,10 +48,12 @@
             button3 = new Button();
             button4 = new Button();
             labelTitle = new Label();
+            numericUpDown1 = new NumericUpDown();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -290,12 +292,20 @@
             labelTitle.Text = "Data Management System";
             labelTitle.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // numericUpDown1
+            // 
+            numericUpDown1.Location = new Point(12, 612);
+            numericUpDown1.Name = "numericUpDown1";
+            numericUpDown1.Size = new Size(120, 23);
+            numericUpDown1.TabIndex = 7;
+            // 
             // Form5
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1200, 660);
+            Controls.Add(numericUpDown1);
             Controls.Add(labelTitle);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -314,6 +324,7 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
         }
 
@@ -339,5 +350,6 @@
         private Label label4;
         private Label label5;
         private Label labelTitle;
+        private NumericUpDown numericUpDown1;
     }
 }
