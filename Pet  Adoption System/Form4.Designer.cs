@@ -32,17 +32,8 @@
             panel1 = new Panel();
             panel8 = new Panel();
             label12 = new Label();
-            textBox2 = new TextBox();
             textBox1 = new TextBox();
             comboBox1 = new ComboBox();
-            textBox3 = new TextBox();
-            label8 = new Label();
-            label9 = new Label();
-            label11 = new Label();
-            label10 = new Label();
-            button2 = new Button();
-            button1 = new Button();
-            label7 = new Label();
             dataGridView1 = new DataGridView();
             panel9 = new Panel();
             panel7 = new Panel();
@@ -69,6 +60,10 @@
             panel11 = new Panel();
             panel12 = new Panel();
             panel13 = new Panel();
+            label14 = new Label();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
             panel1.SuspendLayout();
             panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -91,34 +86,29 @@
             // panel1
             // 
             panel1.BackColor = Color.PapayaWhip;
-            panel1.Controls.Add(panel8);
+            panel1.Controls.Add(button3);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
-            panel1.Controls.Add(label7);
+            panel1.Controls.Add(panel8);
             panel1.Controls.Add(dataGridView1);
-            panel1.Location = new Point(214, 34);
+            panel1.Location = new Point(212, 34);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1044, 570);
+            panel1.Size = new Size(1069, 614);
             panel1.TabIndex = 16;
             panel1.Paint += panel1_Paint;
             // 
             // panel8
             // 
             panel8.BackColor = Color.PeachPuff;
+            panel8.Controls.Add(label14);
             panel8.Controls.Add(label12);
-            panel8.Controls.Add(textBox2);
             panel8.Controls.Add(textBox1);
             panel8.Controls.Add(comboBox1);
-            panel8.Controls.Add(textBox3);
-            panel8.Controls.Add(label8);
-            panel8.Controls.Add(label9);
-            panel8.Controls.Add(label11);
-            panel8.Controls.Add(label10);
-            panel8.Location = new Point(25, 27);
+            panel8.Location = new Point(12, 10);
             panel8.Margin = new Padding(3, 4, 3, 4);
             panel8.Name = "panel8";
-            panel8.Size = new Size(1003, 152);
+            panel8.Size = new Size(1048, 79);
             panel8.TabIndex = 17;
             panel8.Paint += panel8_Paint;
             // 
@@ -126,129 +116,39 @@
             // 
             label12.AutoSize = true;
             label12.Font = new Font("Sitka Small", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.Location = new Point(5, 1);
+            label12.Location = new Point(14, 2);
             label12.Name = "label12";
-            label12.Size = new Size(121, 35);
+            label12.Size = new Size(209, 35);
             label12.TabIndex = 18;
-            label12.Text = "Product ";
+            label12.Text = "~~ Products ~~";
             label12.Click += label12_Click;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(511, 64);
-            textBox2.Margin = new Padding(3, 4, 3, 4);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(170, 27);
-            textBox2.TabIndex = 2;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(109, 64);
+            textBox1.Location = new Point(14, 41);
             textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(170, 27);
+            textBox1.Size = new Size(662, 27);
             textBox1.TabIndex = 1;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(328, 64);
+            comboBox1.Location = new Point(686, 41);
             comboBox1.Margin = new Padding(3, 4, 3, 4);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(138, 28);
+            comboBox1.Size = new Size(347, 28);
             comboBox1.TabIndex = 16;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(713, 64);
-            textBox3.Margin = new Padding(3, 4, 3, 4);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(170, 27);
-            textBox3.TabIndex = 3;
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Sitka Small", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(109, 35);
-            label8.Name = "label8";
-            label8.Size = new Size(69, 24);
-            label8.TabIndex = 6;
-            label8.Text = "Name:";
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Sitka Small", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label9.Location = new Point(328, 37);
-            label9.Name = "label9";
-            label9.Size = new Size(90, 24);
-            label9.TabIndex = 7;
-            label9.Text = "category";
-            label9.Click += label9_Click;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Sitka Small", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.Location = new Point(710, 37);
-            label11.Name = "label11";
-            label11.Size = new Size(57, 24);
-            label11.TabIndex = 9;
-            label11.Text = "Price";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Sitka Small", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label10.Location = new Point(511, 37);
-            label10.Name = "label10";
-            label10.Size = new Size(92, 24);
-            label10.TabIndex = 8;
-            label10.Text = "Quantity";
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.Peru;
-            button2.Location = new Point(839, 227);
-            button2.Margin = new Padding(3, 4, 3, 4);
-            button2.Name = "button2";
-            button2.Size = new Size(111, 57);
-            button2.TabIndex = 11;
-            button2.Text = "Delete";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.Peru;
-            button1.Location = new Point(705, 227);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(106, 57);
-            button1.TabIndex = 10;
-            button1.Text = "Save";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Sitka Small", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.Location = new Point(443, 271);
-            label7.Name = "label7";
-            label7.Size = new Size(170, 35);
-            label7.TabIndex = 6;
-            label7.Text = "Product List";
             // 
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(40, 312);
+            dataGridView1.Location = new Point(10, 97);
             dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(971, 237);
+            dataGridView1.Size = new Size(1050, 454);
             dataGridView1.TabIndex = 0;
             // 
             // panel9
@@ -261,10 +161,10 @@
             panel9.Controls.Add(panel3);
             panel9.Controls.Add(panel4);
             panel9.Controls.Add(panel5);
-            panel9.Location = new Point(19, 32);
+            panel9.Location = new Point(27, 32);
             panel9.Margin = new Padding(3, 4, 3, 4);
             panel9.Name = "panel9";
-            panel9.Size = new Size(174, 572);
+            panel9.Size = new Size(174, 616);
             panel9.TabIndex = 17;
             // 
             // panel7
@@ -272,7 +172,7 @@
             panel7.BackColor = Color.FromArgb(128, 64, 64);
             panel7.Controls.Add(pictureBox7);
             panel7.Controls.Add(label6);
-            panel7.Location = new Point(14, 489);
+            panel7.Location = new Point(14, 525);
             panel7.Margin = new Padding(3, 4, 3, 4);
             panel7.Name = "panel7";
             panel7.Size = new Size(144, 52);
@@ -302,7 +202,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(2, 3);
+            pictureBox1.Location = new Point(2, 19);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(168, 130);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -314,7 +214,7 @@
             panel2.BackColor = Color.FromArgb(128, 64, 64);
             panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(label1);
-            panel2.Location = new Point(16, 136);
+            panel2.Location = new Point(16, 172);
             panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
             panel2.Size = new Size(144, 52);
@@ -346,7 +246,7 @@
             panel6.BackColor = Color.FromArgb(128, 64, 64);
             panel6.Controls.Add(pictureBox4);
             panel6.Controls.Add(label5);
-            panel6.Location = new Point(14, 417);
+            panel6.Location = new Point(14, 453);
             panel6.Margin = new Padding(3, 4, 3, 4);
             panel6.Name = "panel6";
             panel6.Size = new Size(144, 52);
@@ -379,7 +279,7 @@
             panel3.Controls.Add(pictureBox3);
             panel3.Controls.Add(label3);
             panel3.Controls.Add(label2);
-            panel3.Location = new Point(15, 210);
+            panel3.Location = new Point(15, 246);
             panel3.Margin = new Padding(3, 4, 3, 4);
             panel3.Name = "panel3";
             panel3.Size = new Size(144, 48);
@@ -421,7 +321,7 @@
             panel4.BackColor = Color.FromArgb(128, 64, 64);
             panel4.Controls.Add(pictureBox5);
             panel4.Controls.Add(label4);
-            panel4.Location = new Point(15, 277);
+            panel4.Location = new Point(15, 313);
             panel4.Margin = new Padding(3, 4, 3, 4);
             panel4.Name = "panel4";
             panel4.Size = new Size(144, 48);
@@ -453,7 +353,7 @@
             panel5.BackColor = Color.FromArgb(128, 64, 64);
             panel5.Controls.Add(pictureBox6);
             panel5.Controls.Add(label13);
-            panel5.Location = new Point(14, 346);
+            panel5.Location = new Point(14, 382);
             panel5.Margin = new Padding(3, 4, 3, 4);
             panel5.Name = "panel5";
             panel5.Size = new Size(144, 52);
@@ -485,40 +385,86 @@
             panel10.BackColor = Color.FromArgb(192, 255, 255);
             panel10.Location = new Point(12, 12);
             panel10.Name = "panel10";
-            panel10.Size = new Size(1246, 10);
+            panel10.Size = new Size(1289, 10);
             panel10.TabIndex = 18;
             // 
             // panel11
             // 
             panel11.BackColor = Color.FromArgb(192, 255, 255);
-            panel11.Location = new Point(15, 614);
+            panel11.Location = new Point(12, 655);
             panel11.Name = "panel11";
-            panel11.Size = new Size(1243, 10);
+            panel11.Size = new Size(1288, 10);
             panel11.TabIndex = 19;
             panel11.Paint += panel11_Paint;
             // 
             // panel12
             // 
             panel12.BackColor = Color.FromArgb(192, 255, 255);
-            panel12.Location = new Point(5, 12);
+            panel12.Location = new Point(9, 12);
             panel12.Name = "panel12";
-            panel12.Size = new Size(10, 612);
+            panel12.Size = new Size(10, 653);
             panel12.TabIndex = 18;
             // 
             // panel13
             // 
             panel13.BackColor = Color.FromArgb(192, 255, 255);
-            panel13.Location = new Point(1264, 12);
+            panel13.Location = new Point(1291, 12);
             panel13.Name = "panel13";
-            panel13.Size = new Size(10, 612);
+            panel13.Size = new Size(10, 653);
             panel13.TabIndex = 19;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Sitka Small", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14.Location = new Point(686, 4);
+            label14.Name = "label14";
+            label14.Size = new Size(251, 35);
+            label14.TabIndex = 19;
+            label14.Text = "~~ All Products ~~";
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(128, 64, 64);
+            button1.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(333, 558);
+            button1.Name = "button1";
+            button1.Size = new Size(109, 46);
+            button1.TabIndex = 18;
+            button1.Text = "ADD";
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(128, 64, 64);
+            button2.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.ForeColor = SystemColors.ButtonHighlight;
+            button2.Location = new Point(472, 558);
+            button2.Name = "button2";
+            button2.Size = new Size(109, 46);
+            button2.TabIndex = 19;
+            button2.Text = "UPDATE";
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(128, 64, 64);
+            button3.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button3.ForeColor = SystemColors.ButtonHighlight;
+            button3.Location = new Point(605, 558);
+            button3.Name = "button3";
+            button3.Size = new Size(109, 46);
+            button3.TabIndex = 20;
+            button3.Text = "DELETE";
+            button3.UseVisualStyleBackColor = false;
             // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 0, 0);
-            ClientSize = new Size(1289, 633);
+            ClientSize = new Size(1312, 676);
             Controls.Add(panel13);
             Controls.Add(panel12);
             Controls.Add(panel11);
@@ -532,7 +478,6 @@
             Text = "Form4";
             Load += Form4_Load;
             panel1.ResumeLayout(false);
-            panel1.PerformLayout();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
@@ -574,15 +519,6 @@
         private Panel panel2;
         private Label label1;
         private Panel panel1;
-        private Button button2;
-        private Button button1;
-        private Label label11;
-        private Label label10;
-        private Label label9;
-        private Label label8;
-        private Label label7;
-        private TextBox textBox3;
-        private TextBox textBox2;
         private TextBox textBox1;
         private DataGridView dataGridView1;
         private Panel panel8;
@@ -601,5 +537,9 @@
         private Panel panel11;
         private Panel panel12;
         private Panel panel13;
+        private Label label14;
+        private Button button3;
+        private Button button2;
+        private Button button1;
     }
 }

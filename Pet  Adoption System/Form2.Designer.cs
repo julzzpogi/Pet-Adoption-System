@@ -380,14 +380,14 @@
             panel17.Controls.Add(label14);
             panel17.Location = new Point(619, 69);
             panel17.Name = "panel17";
-            panel17.Size = new Size(172, 77);
+            panel17.Size = new Size(172, 70);
             panel17.TabIndex = 5;
             // 
             // label14
             // 
             label14.AutoSize = true;
             label14.ForeColor = SystemColors.ButtonHighlight;
-            label14.Location = new Point(3, 43);
+            label14.Location = new Point(6, 37);
             label14.Name = "label14";
             label14.Size = new Size(162, 20);
             label14.TabIndex = 6;
@@ -399,18 +399,19 @@
             panel16.Controls.Add(label13);
             panel16.Location = new Point(422, 69);
             panel16.Name = "panel16";
-            panel16.Size = new Size(172, 77);
+            panel16.Size = new Size(172, 70);
             panel16.TabIndex = 5;
             // 
             // label13
             // 
             label13.AutoSize = true;
             label13.ForeColor = SystemColors.ButtonHighlight;
-            label13.Location = new Point(35, 43);
+            label13.Location = new Point(36, 37);
             label13.Name = "label13";
             label13.Size = new Size(95, 20);
             label13.TabIndex = 5;
             label13.Text = "TOTAL SALES";
+            label13.Click += label13_Click;
             // 
             // panel15
             // 
@@ -418,14 +419,14 @@
             panel15.Controls.Add(label12);
             panel15.Location = new Point(224, 69);
             panel15.Name = "panel15";
-            panel15.Size = new Size(172, 77);
+            panel15.Size = new Size(172, 70);
             panel15.TabIndex = 5;
             // 
             // label12
             // 
             label12.AutoSize = true;
             label12.ForeColor = SystemColors.ButtonHighlight;
-            label12.Location = new Point(31, 43);
+            label12.Location = new Point(31, 37);
             label12.Name = "label12";
             label12.Size = new Size(112, 20);
             label12.TabIndex = 4;
@@ -438,14 +439,14 @@
             panel14.Controls.Add(label10);
             panel14.Location = new Point(27, 69);
             panel14.Name = "panel14";
-            panel14.Size = new Size(175, 77);
+            panel14.Size = new Size(175, 70);
             panel14.TabIndex = 4;
             // 
             // label10
             // 
             label10.AutoSize = true;
             label10.ForeColor = SystemColors.ButtonHighlight;
-            label10.Location = new Point(32, 48);
+            label10.Location = new Point(30, 37);
             label10.Name = "label10";
             label10.Size = new Size(118, 20);
             label10.TabIndex = 1;
@@ -479,10 +480,10 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(11, 157);
+            dataGridView1.Location = new Point(11, 146);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1025, 433);
+            dataGridView1.Size = new Size(1025, 445);
             dataGridView1.TabIndex = 2;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
