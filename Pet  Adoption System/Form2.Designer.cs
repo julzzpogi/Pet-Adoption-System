@@ -51,30 +51,30 @@
             label7 = new Label();
             label8 = new Label();
             panel1 = new Panel();
+            panel18 = new Panel();
+            label11 = new Label();
+            panel8 = new Panel();
+            panel17 = new Panel();
+            label14 = new Label();
+            pictureBox10 = new PictureBox();
+            panel16 = new Panel();
+            label13 = new Label();
+            pictureBox9 = new PictureBox();
+            panel15 = new Panel();
+            label12 = new Label();
+            pictureBox8 = new PictureBox();
+            panel14 = new Panel();
+            label10 = new Label();
+            pictureBox11 = new PictureBox();
+            groupBox1 = new GroupBox();
+            button1 = new Button();
+            dataGridView1 = new DataGridView();
             panel9 = new Panel();
             pictureBox1 = new PictureBox();
             panel10 = new Panel();
             panel11 = new Panel();
             panel12 = new Panel();
             panel13 = new Panel();
-            label10 = new Label();
-            dataGridView1 = new DataGridView();
-            groupBox1 = new GroupBox();
-            button1 = new Button();
-            panel14 = new Panel();
-            panel15 = new Panel();
-            panel16 = new Panel();
-            panel17 = new Panel();
-            pictureBox8 = new PictureBox();
-            pictureBox9 = new PictureBox();
-            pictureBox10 = new PictureBox();
-            pictureBox11 = new PictureBox();
-            panel8 = new Panel();
-            panel18 = new Panel();
-            label11 = new Label();
-            label12 = new Label();
-            label13 = new Label();
-            label14 = new Label();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel3.SuspendLayout();
@@ -88,20 +88,20 @@
             panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             panel1.SuspendLayout();
+            panel18.SuspendLayout();
+            panel8.SuspendLayout();
+            panel17.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            panel16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            groupBox1.SuspendLayout();
-            panel14.SuspendLayout();
-            panel15.SuspendLayout();
-            panel16.SuspendLayout();
-            panel17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            panel8.SuspendLayout();
-            panel18.SuspendLayout();
             SuspendLayout();
             // 
             // panel2
@@ -353,6 +353,182 @@
             panel1.Size = new Size(1007, 568);
             panel1.TabIndex = 0;
             // 
+            // panel18
+            // 
+            panel18.BackColor = Color.FromArgb(128, 64, 64);
+            panel18.Controls.Add(label11);
+            panel18.Location = new Point(18, 9);
+            panel18.Name = "panel18";
+            panel18.Size = new Size(157, 49);
+            panel18.TabIndex = 7;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe Print", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = SystemColors.ButtonHighlight;
+            label11.Location = new Point(12, 10);
+            label11.Name = "label11";
+            label11.Size = new Size(135, 31);
+            label11.TabIndex = 0;
+            label11.Text = "DASHBOARD";
+            // 
+            // panel8
+            // 
+            panel8.BackColor = Color.FromArgb(128, 64, 64);
+            panel8.Controls.Add(label7);
+            panel8.Location = new Point(483, 9);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(506, 49);
+            panel8.TabIndex = 6;
+            // 
+            // panel17
+            // 
+            panel17.BackColor = Color.FromArgb(64, 0, 0);
+            panel17.Controls.Add(label14);
+            panel17.Controls.Add(pictureBox10);
+            panel17.Location = new Point(617, 71);
+            panel17.Name = "panel17";
+            panel17.Size = new Size(172, 125);
+            panel17.TabIndex = 5;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.ForeColor = SystemColors.ButtonHighlight;
+            label14.Location = new Point(5, 91);
+            label14.Name = "label14";
+            label14.Size = new Size(162, 20);
+            label14.TabIndex = 6;
+            label14.Text = "INVENTORY SUMMARY";
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.Location = new Point(25, 18);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(125, 62);
+            pictureBox10.TabIndex = 4;
+            pictureBox10.TabStop = false;
+            // 
+            // panel16
+            // 
+            panel16.BackColor = Color.FromArgb(64, 0, 0);
+            panel16.Controls.Add(label13);
+            panel16.Controls.Add(pictureBox9);
+            panel16.Location = new Point(420, 71);
+            panel16.Name = "panel16";
+            panel16.Size = new Size(172, 125);
+            panel16.TabIndex = 5;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.ForeColor = SystemColors.ButtonHighlight;
+            label13.Location = new Point(39, 91);
+            label13.Name = "label13";
+            label13.Size = new Size(95, 20);
+            label13.TabIndex = 5;
+            label13.Text = "TOTAL SALES";
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Location = new Point(24, 18);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(125, 62);
+            pictureBox9.TabIndex = 3;
+            pictureBox9.TabStop = false;
+            // 
+            // panel15
+            // 
+            panel15.BackColor = Color.FromArgb(64, 0, 0);
+            panel15.Controls.Add(label12);
+            panel15.Controls.Add(pictureBox8);
+            panel15.Location = new Point(222, 71);
+            panel15.Name = "panel15";
+            panel15.Size = new Size(172, 125);
+            panel15.TabIndex = 5;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.ForeColor = SystemColors.ButtonHighlight;
+            label12.Location = new Point(35, 91);
+            label12.Name = "label12";
+            label12.Size = new Size(112, 20);
+            label12.TabIndex = 4;
+            label12.Text = "BEST PRODUCT";
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Location = new Point(28, 16);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(125, 62);
+            pictureBox8.TabIndex = 2;
+            pictureBox8.TabStop = false;
+            // 
+            // panel14
+            // 
+            panel14.BackColor = Color.FromArgb(64, 0, 0);
+            panel14.Controls.Add(label10);
+            panel14.Controls.Add(pictureBox11);
+            panel14.Location = new Point(25, 71);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(175, 125);
+            panel14.TabIndex = 4;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.ForeColor = SystemColors.ButtonHighlight;
+            label10.Location = new Point(28, 91);
+            label10.Name = "label10";
+            label10.Size = new Size(118, 20);
+            label10.TabIndex = 1;
+            label10.Text = "BEST CATEGORY";
+            label10.Click += label10_Click;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.Location = new Point(23, 15);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(125, 62);
+            pictureBox11.TabIndex = 3;
+            pictureBox11.TabStop = false;
+            // 
+            // groupBox1
+            // 
+            groupBox1.BackColor = Color.PeachPuff;
+            groupBox1.BackgroundImage = (Image)resources.GetObject("groupBox1.BackgroundImage");
+            groupBox1.Controls.Add(button1);
+            groupBox1.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            groupBox1.ForeColor = Color.Black;
+            groupBox1.Location = new Point(808, 98);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(171, 68);
+            groupBox1.TabIndex = 3;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "For Walk-in";
+            // 
+            // button1
+            // 
+            button1.Font = new Font("Palatino Linotype", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(45, 26);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 0;
+            button1.Text = "Walk-ins";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(16, 213);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(973, 336);
+            dataGridView1.TabIndex = 2;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
             // panel9
             // 
             panel9.BackColor = Color.PeachPuff;
@@ -411,182 +587,6 @@
             panel13.Size = new Size(10, 609);
             panel13.TabIndex = 6;
             // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.ForeColor = SystemColors.ButtonHighlight;
-            label10.Location = new Point(28, 91);
-            label10.Name = "label10";
-            label10.Size = new Size(118, 20);
-            label10.TabIndex = 1;
-            label10.Text = "BEST CATEGORY";
-            label10.Click += label10_Click;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(16, 213);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(973, 336);
-            dataGridView1.TabIndex = 2;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // groupBox1
-            // 
-            groupBox1.BackColor = Color.PeachPuff;
-            groupBox1.BackgroundImage = (Image)resources.GetObject("groupBox1.BackgroundImage");
-            groupBox1.Controls.Add(button1);
-            groupBox1.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            groupBox1.ForeColor = Color.Black;
-            groupBox1.Location = new Point(808, 98);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(171, 68);
-            groupBox1.TabIndex = 3;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "For Walk-in";
-            // 
-            // button1
-            // 
-            button1.Font = new Font("Palatino Linotype", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(45, 26);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 0;
-            button1.Text = "Walk-ins";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // panel14
-            // 
-            panel14.BackColor = Color.FromArgb(64, 0, 0);
-            panel14.Controls.Add(label10);
-            panel14.Controls.Add(pictureBox11);
-            panel14.Location = new Point(25, 71);
-            panel14.Name = "panel14";
-            panel14.Size = new Size(175, 125);
-            panel14.TabIndex = 4;
-            // 
-            // panel15
-            // 
-            panel15.BackColor = Color.FromArgb(64, 0, 0);
-            panel15.Controls.Add(label12);
-            panel15.Controls.Add(pictureBox8);
-            panel15.Location = new Point(222, 71);
-            panel15.Name = "panel15";
-            panel15.Size = new Size(172, 125);
-            panel15.TabIndex = 5;
-            // 
-            // panel16
-            // 
-            panel16.BackColor = Color.FromArgb(64, 0, 0);
-            panel16.Controls.Add(label13);
-            panel16.Controls.Add(pictureBox9);
-            panel16.Location = new Point(420, 71);
-            panel16.Name = "panel16";
-            panel16.Size = new Size(172, 125);
-            panel16.TabIndex = 5;
-            // 
-            // panel17
-            // 
-            panel17.BackColor = Color.FromArgb(64, 0, 0);
-            panel17.Controls.Add(label14);
-            panel17.Controls.Add(pictureBox10);
-            panel17.Location = new Point(617, 71);
-            panel17.Name = "panel17";
-            panel17.Size = new Size(172, 125);
-            panel17.TabIndex = 5;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.Location = new Point(28, 16);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(125, 62);
-            pictureBox8.TabIndex = 2;
-            pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            pictureBox9.Location = new Point(24, 18);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(125, 62);
-            pictureBox9.TabIndex = 3;
-            pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            pictureBox10.Location = new Point(25, 18);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(125, 62);
-            pictureBox10.TabIndex = 4;
-            pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.Location = new Point(23, 15);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(125, 62);
-            pictureBox11.TabIndex = 3;
-            pictureBox11.TabStop = false;
-            // 
-            // panel8
-            // 
-            panel8.BackColor = Color.FromArgb(128, 64, 64);
-            panel8.Controls.Add(label7);
-            panel8.Location = new Point(483, 9);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(506, 49);
-            panel8.TabIndex = 6;
-            // 
-            // panel18
-            // 
-            panel18.BackColor = Color.FromArgb(128, 64, 64);
-            panel18.Controls.Add(label11);
-            panel18.Location = new Point(18, 9);
-            panel18.Name = "panel18";
-            panel18.Size = new Size(157, 49);
-            panel18.TabIndex = 7;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe Print", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = SystemColors.ButtonHighlight;
-            label11.Location = new Point(12, 10);
-            label11.Name = "label11";
-            label11.Size = new Size(135, 31);
-            label11.TabIndex = 0;
-            label11.Text = "DASHBOARD";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.ForeColor = SystemColors.ButtonHighlight;
-            label12.Location = new Point(35, 91);
-            label12.Name = "label12";
-            label12.Size = new Size(112, 20);
-            label12.TabIndex = 4;
-            label12.Text = "BEST PRODUCT";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.ForeColor = SystemColors.ButtonHighlight;
-            label13.Location = new Point(39, 91);
-            label13.Name = "label13";
-            label13.Size = new Size(95, 20);
-            label13.TabIndex = 5;
-            label13.Text = "TOTAL SALES";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.ForeColor = SystemColors.ButtonHighlight;
-            label14.Location = new Point(5, 91);
-            label14.Name = "label14";
-            label14.Size = new Size(162, 20);
-            label14.TabIndex = 6;
-            label14.Text = "INVENTORY SUMMARY";
-            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -625,26 +625,26 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            groupBox1.ResumeLayout(false);
-            panel14.ResumeLayout(false);
-            panel14.PerformLayout();
-            panel15.ResumeLayout(false);
-            panel15.PerformLayout();
-            panel16.ResumeLayout(false);
-            panel16.PerformLayout();
-            panel17.ResumeLayout(false);
-            panel17.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            panel8.ResumeLayout(false);
-            panel8.PerformLayout();
             panel18.ResumeLayout(false);
             panel18.PerformLayout();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
+            panel17.ResumeLayout(false);
+            panel17.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            panel16.ResumeLayout(false);
+            panel16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            panel15.ResumeLayout(false);
+            panel15.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            panel14.ResumeLayout(false);
+            panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
