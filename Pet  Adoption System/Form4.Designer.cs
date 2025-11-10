@@ -428,9 +428,9 @@
             button1.BackColor = Color.FromArgb(128, 64, 64);
             button1.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(333, 558);
+            button1.Location = new Point(221, 564);
             button1.Name = "button1";
-            button1.Size = new Size(109, 46);
+            button1.Size = new Size(186, 38);
             button1.TabIndex = 18;
             button1.Text = "ADD";
             button1.UseVisualStyleBackColor = false;
@@ -440,9 +440,9 @@
             button2.BackColor = Color.FromArgb(128, 64, 64);
             button2.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.Location = new Point(472, 558);
+            button2.Location = new Point(432, 564);
             button2.Name = "button2";
-            button2.Size = new Size(109, 46);
+            button2.Size = new Size(178, 38);
             button2.TabIndex = 19;
             button2.Text = "UPDATE";
             button2.UseVisualStyleBackColor = false;
@@ -452,9 +452,9 @@
             button3.BackColor = Color.FromArgb(128, 64, 64);
             button3.Font = new Font("Showcard Gothic", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button3.ForeColor = SystemColors.ButtonHighlight;
-            button3.Location = new Point(605, 558);
+            button3.Location = new Point(637, 564);
             button3.Name = "button3";
-            button3.Size = new Size(109, 46);
+            button3.Size = new Size(177, 38);
             button3.TabIndex = 20;
             button3.Text = "DELETE";
             button3.UseVisualStyleBackColor = false;

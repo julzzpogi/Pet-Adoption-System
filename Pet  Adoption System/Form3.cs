@@ -108,7 +108,7 @@ namespace Pet__Adoption_System
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             SqlConnection conn = new SqlConnection(haha);
             conn.Open();
             SqlCommand sqlCommand = new SqlCommand("Insert into Table_1 (employeename, employeeaddress, employeephonenumber,  employeeemail,employeepass) VALUES(@name, @address, @phonenumber, @email, @pass)", conn);
@@ -180,6 +180,11 @@ namespace Pet__Adoption_System
             form4.Show();
             this.Hide();
             //gawen mo dito ung inventory
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
