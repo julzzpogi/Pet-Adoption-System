@@ -135,20 +135,20 @@ namespace Pet__Adoption_System
         private void button1_Click(object sender, EventArgs e)
         {
 
-            SqlConnection conn = new SqlConnection(haha);
-            conn.Open();
-            SqlCommand sqlCommand = new SqlCommand("Insert into product_table (productName, productCategory, productQuantity,  productPrice) VALUES(@name, @category, @quantity, @price)", conn);
-            sqlCommand.Parameters.AddWithValue("@name", textBox1.Text);
-            sqlCommand.Parameters.AddWithValue("@category", comboBox1.Text);
-            sqlCommand.Parameters.AddWithValue("@quantity", textBox2.Text);
-            sqlCommand.Parameters.AddWithValue("@price", textBox3.Text);
+            //SqlConnection conn = new SqlConnection(haha);
+            //conn.Open();
+            //SqlCommand sqlCommand = new SqlCommand("Insert into product_table (productName, productCategory, productQuantity,  productPrice) VALUES(@name, @category, @quantity, @price)", conn);
+            //sqlCommand.Parameters.AddWithValue("@name", textBox1.Text);
+            //sqlCommand.Parameters.AddWithValue("@category", comboBox1.Text);
+            //sqlCommand.Parameters.AddWithValue("@quantity", textBox2.Text);
+            //sqlCommand.Parameters.AddWithValue("@price", textBox3.Text);
 
-            sqlCommand.ExecuteNonQuery();
-            conn.Close();
+            //sqlCommand.ExecuteNonQuery();
+            //conn.Close();
 
-            DisplayProduct();
-            MessageBoxIcon ikun = MessageBoxIcon.Information;
-            MessageBox.Show("Successfully saved", "Information", MessageBoxButtons.OK, ikun);
+            //DisplayProduct();
+            //MessageBoxIcon ikun = MessageBoxIcon.Information;
+            //MessageBox.Show("Successfully saved", "Information", MessageBoxButtons.OK, ikun);
         }
 
         private void button2_Click(object sender, EventArgs e)

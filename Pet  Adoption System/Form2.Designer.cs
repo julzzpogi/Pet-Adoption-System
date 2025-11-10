@@ -484,6 +484,7 @@
             button1.TabIndex = 0;
             button1.Text = "Walk-ins";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click_2;
             // 
             // dataGridView1
             // 
@@ -530,6 +531,7 @@
             panel10.Name = "panel10";
             panel10.Size = new Size(1093, 8);
             panel10.TabIndex = 11;
+            panel10.Paint += panel10_Paint;
             // 
             // panel11
             // 

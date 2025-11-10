@@ -109,7 +109,7 @@ namespace Pet__Adoption_System
         private void button1_Click(object sender, EventArgs e)
         {
 
-            SqlConnection conn = new SqlConnection(haha);
+           /* SqlConnection conn = new SqlConnection(haha);
             conn.Open();
             SqlCommand sqlCommand = new SqlCommand("Insert into Table_1 (employeename, employeeaddress, employeephonenumber,  employeeemail,employeepass) VALUES(@name, @address, @phonenumber, @email, @pass)", conn);
             sqlCommand.Parameters.AddWithValue("@name", textBox1.Text);
@@ -123,7 +123,7 @@ namespace Pet__Adoption_System
 
             DisplayEmployee();
             MessageBoxIcon ikun = MessageBoxIcon.Information;
-            MessageBox.Show("Successfully saved", "Information", MessageBoxButtons.OK, ikun);
+            MessageBox.Show("Successfully saved", "Information", MessageBoxButtons.OK, ikun);*/
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)

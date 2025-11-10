@@ -54,9 +54,6 @@
             pictureBox5 = new PictureBox();
             label3 = new Label();
             label2 = new Label();
-            panel5 = new Panel();
-            pictureBox6 = new PictureBox();
-            label4 = new Label();
             panel11 = new Panel();
             pictureBox8 = new PictureBox();
             label13 = new Label();
@@ -74,8 +71,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             SuspendLayout();
@@ -155,7 +150,7 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(16, 39);
+            dataGridView1.Location = new Point(27, 39);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(889, 350);
@@ -196,7 +191,6 @@
             panel2.Controls.Add(panel3);
             panel2.Controls.Add(panel6);
             panel2.Controls.Add(panel4);
-            panel2.Controls.Add(panel5);
             panel2.Controls.Add(panel11);
             panel2.Location = new Point(22, 23);
             panel2.Name = "panel2";
@@ -209,7 +203,7 @@
             panel7.BackColor = Color.FromArgb(128, 64, 64);
             panel7.Controls.Add(pictureBox7);
             panel7.Controls.Add(label6);
-            panel7.Location = new Point(12, 376);
+            panel7.Location = new Point(12, 368);
             panel7.Name = "panel7";
             panel7.Size = new Size(126, 39);
             panel7.TabIndex = 7;
@@ -252,7 +246,7 @@
             panel3.BackColor = Color.FromArgb(128, 64, 64);
             panel3.Controls.Add(pictureBox3);
             panel3.Controls.Add(label1);
-            panel3.Location = new Point(14, 112);
+            panel3.Location = new Point(14, 114);
             panel3.Name = "panel3";
             panel3.Size = new Size(126, 39);
             panel3.TabIndex = 0;
@@ -284,7 +278,7 @@
             panel6.BackColor = Color.FromArgb(128, 64, 64);
             panel6.Controls.Add(pictureBox4);
             panel6.Controls.Add(label5);
-            panel6.Location = new Point(12, 322);
+            panel6.Location = new Point(12, 284);
             panel6.Name = "panel6";
             panel6.Size = new Size(126, 39);
             panel6.TabIndex = 6;
@@ -317,7 +311,7 @@
             panel4.Controls.Add(pictureBox5);
             panel4.Controls.Add(label3);
             panel4.Controls.Add(label2);
-            panel4.Location = new Point(13, 167);
+            panel4.Location = new Point(13, 170);
             panel4.Name = "panel4";
             panel4.Size = new Size(126, 36);
             panel4.TabIndex = 6;
@@ -354,44 +348,12 @@
             label2.TabIndex = 6;
             label2.Text = "Inventory";
             // 
-            // panel5
-            // 
-            panel5.BackColor = Color.FromArgb(128, 64, 64);
-            panel5.Controls.Add(pictureBox6);
-            panel5.Controls.Add(label4);
-            panel5.Location = new Point(13, 218);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(126, 36);
-            panel5.TabIndex = 6;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(7, 6);
-            pictureBox6.Margin = new Padding(3, 2, 3, 2);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(27, 25);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 11;
-            pictureBox6.TabStop = false;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.ForeColor = SystemColors.ButtonFace;
-            label4.Location = new Point(34, 11);
-            label4.Name = "label4";
-            label4.Size = new Size(60, 17);
-            label4.TabIndex = 8;
-            label4.Text = "Supplier";
-            // 
             // panel11
             // 
             panel11.BackColor = Color.FromArgb(128, 64, 64);
             panel11.Controls.Add(pictureBox8);
             panel11.Controls.Add(label13);
-            panel11.Location = new Point(12, 269);
+            panel11.Location = new Point(12, 225);
             panel11.Name = "panel11";
             panel11.Size = new Size(126, 39);
             panel11.TabIndex = 6;
@@ -462,9 +424,6 @@
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            panel5.ResumeLayout(false);
-            panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel11.ResumeLayout(false);
             panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
@@ -492,9 +451,6 @@
         private PictureBox pictureBox5;
         private Label label3;
         private Label label2;
-        private Panel panel5;
-        private PictureBox pictureBox6;
-        private Label label4;
         private Panel panel11;
         private PictureBox pictureBox8;
         private Label label13;

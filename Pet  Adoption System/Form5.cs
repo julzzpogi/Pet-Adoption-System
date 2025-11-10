@@ -21,5 +21,10 @@ namespace Pet__Adoption_System
         {
 
         }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
