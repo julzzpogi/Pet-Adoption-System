@@ -49,6 +49,7 @@
             button4 = new Button();
             labelTitle = new Label();
             numericUpDown1 = new NumericUpDown();
+            button5 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel2.SuspendLayout();
@@ -113,7 +114,7 @@
             // 
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
-            dataGridView1.BackgroundColor = Color.White;
+            dataGridView1.BackgroundColor = Color.PeachPuff;
             dataGridView1.BorderStyle = BorderStyle.None;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.GridColor = Color.FromArgb(224, 224, 224);
@@ -121,6 +122,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersVisible = false;
+            dataGridView1.RowHeadersWidth = 51;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(500, 385);
             dataGridView1.TabIndex = 0;
@@ -139,7 +141,7 @@
             panel2.Controls.Add(dataGridView2);
             panel2.Location = new Point(600, 80);
             panel2.Name = "panel2";
-            panel2.Size = new Size(575, 500);
+            panel2.Size = new Size(627, 500);
             panel2.TabIndex = 1;
             // 
             // label5
@@ -211,7 +213,7 @@
             // 
             dataGridView2.AllowUserToAddRows = false;
             dataGridView2.AllowUserToDeleteRows = false;
-            dataGridView2.BackgroundColor = Color.White;
+            dataGridView2.BackgroundColor = Color.PeachPuff;
             dataGridView2.BorderStyle = BorderStyle.None;
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.GridColor = Color.FromArgb(224, 224, 224);
@@ -219,8 +221,9 @@
             dataGridView2.Name = "dataGridView2";
             dataGridView2.ReadOnly = true;
             dataGridView2.RowHeadersVisible = false;
+            dataGridView2.RowHeadersWidth = 51;
             dataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView2.Size = new Size(535, 385);
+            dataGridView2.Size = new Size(584, 385);
             dataGridView2.TabIndex = 1;
             // 
             // button1
@@ -262,8 +265,9 @@
             button3.Name = "button3";
             button3.Size = new Size(180, 40);
             button3.TabIndex = 4;
-            button3.Text = "Process Data";
+            button3.Text = "Add Product";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -281,16 +285,17 @@
             // 
             // labelTitle
             // 
-            labelTitle.BackColor = Color.FromArgb(44, 62, 80);
+            labelTitle.BackColor = Color.PeachPuff;
             labelTitle.Dock = DockStyle.Top;
             labelTitle.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            labelTitle.ForeColor = Color.White;
+            labelTitle.ForeColor = Color.Black;
             labelTitle.Location = new Point(0, 0);
             labelTitle.Name = "labelTitle";
-            labelTitle.Size = new Size(1200, 60);
+            labelTitle.Size = new Size(1257, 60);
             labelTitle.TabIndex = 6;
             labelTitle.Text = "Data Management System";
             labelTitle.TextAlign = ContentAlignment.MiddleCenter;
+            labelTitle.Click += labelTitle_Click;
             // 
             // numericUpDown1
             // 
@@ -299,12 +304,23 @@
             numericUpDown1.Size = new Size(120, 23);
             numericUpDown1.TabIndex = 7;
             // 
+            // button5
+            // 
+            button5.Location = new Point(1148, 12);
+            button5.Name = "button5";
+            button5.Size = new Size(95, 31);
+            button5.TabIndex = 9;
+            button5.Text = "back";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
+            // 
             // Form5
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(1200, 660);
+            BackColor = Color.FromArgb(64, 0, 0);
+            ClientSize = new Size(1257, 660);
+            Controls.Add(button5);
             Controls.Add(numericUpDown1);
             Controls.Add(labelTitle);
             Controls.Add(button4);
@@ -351,5 +367,6 @@
         private Label label5;
         private Label labelTitle;
         private NumericUpDown numericUpDown1;
+        private Button button5;
     }
 }
