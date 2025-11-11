@@ -21,6 +21,7 @@ namespace Pet__Adoption_System
             InitializeComponent();
             StyleProductGrid();
             DisplayBreeddog();
+            DisplayProduct();
 
         }
         private void StyleProductGrid()
@@ -61,6 +62,8 @@ namespace Pet__Adoption_System
 
             dataGridView1.Location = new Point(9, 73);
             dataGridView1.Size = new Size(919, 340);
+            
+
         }
         private void DisplayProduct()
         {
@@ -73,7 +76,7 @@ namespace Pet__Adoption_System
             dt.Load(reader);
             dataGridView1.DataSource = dt;
             con.Close();
-
+            dataGridView1.Columns["Pet_ID"].Visible = false;
         }
         public void DeleteProduct(int ID)
         {
@@ -121,7 +124,6 @@ namespace Pet__Adoption_System
             }
 
             con.Close();
-
 
 
         }

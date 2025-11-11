@@ -50,6 +50,7 @@
             labelTitle = new Label();
             numericUpDown1 = new NumericUpDown();
             button5 = new Button();
+            label6 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel2.SuspendLayout();
@@ -100,6 +101,7 @@
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(180, 23);
             comboBox1.TabIndex = 2;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // textBox1
             // 
@@ -131,6 +133,7 @@
             // 
             panel2.BackColor = Color.FromArgb(248, 248, 248);
             panel2.BorderStyle = BorderStyle.FixedSingle;
+            panel2.Controls.Add(label6);
             panel2.Controls.Add(label5);
             panel2.Controls.Add(label4);
             panel2.Controls.Add(label3);
@@ -178,11 +181,10 @@
             // 
             checkBox1.AutoSize = true;
             checkBox1.Font = new Font("Segoe UI", 9F);
-            checkBox1.Location = new Point(516, 47);
+            checkBox1.Location = new Point(580, 51);
             checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(59, 19);
+            checkBox1.Size = new Size(15, 14);
             checkBox1.TabIndex = 5;
-            checkBox1.Text = "Active";
             checkBox1.UseVisualStyleBackColor = true;
             // 
             // textBox4
@@ -314,6 +316,16 @@
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label6.Location = new Point(550, 49);
+            label6.Name = "label6";
+            label6.Size = new Size(30, 15);
+            label6.TabIndex = 9;
+            label6.Text = "Paid";
+            // 
             // Form5
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -368,5 +380,6 @@
         private Label labelTitle;
         private NumericUpDown numericUpDown1;
         private Button button5;
+        private Label label6;
     }
 }
