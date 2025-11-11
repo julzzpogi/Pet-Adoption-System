@@ -84,7 +84,6 @@
             // 
             comboBox1.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "All Items", "Active Only", "Inactive Only", "By Category" });
             comboBox1.Location = new Point(340, 45);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(180, 23);
@@ -146,6 +145,7 @@
             button2.TabIndex = 3;
             button2.Text = "Save Selection";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -248,5 +248,7 @@
         private Label labelTitle;
         private NumericUpDown numericUpDown1;
         private Button button5;
+        private DataGridViewButtonColumn Save;
+        private DataGridViewButtonColumn delete;
     }
 }
