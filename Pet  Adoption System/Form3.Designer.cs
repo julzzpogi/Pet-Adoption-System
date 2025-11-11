@@ -47,9 +47,6 @@
             panel3 = new Panel();
             pictureBox3 = new PictureBox();
             label1 = new Label();
-            panel6 = new Panel();
-            pictureBox4 = new PictureBox();
-            label5 = new Label();
             panel4 = new Panel();
             pictureBox5 = new PictureBox();
             label3 = new Label();
@@ -67,8 +64,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panel11.SuspendLayout();
@@ -191,7 +186,6 @@
             panel2.Controls.Add(panel7);
             panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(panel3);
-            panel2.Controls.Add(panel6);
             panel2.Controls.Add(panel4);
             panel2.Controls.Add(panel11);
             panel2.Location = new Point(22, 23);
@@ -205,7 +199,7 @@
             panel7.BackColor = Color.FromArgb(128, 64, 64);
             panel7.Controls.Add(pictureBox7);
             panel7.Controls.Add(label6);
-            panel7.Location = new Point(12, 368);
+            panel7.Location = new Point(12, 329);
             panel7.Name = "panel7";
             panel7.Size = new Size(126, 39);
             panel7.TabIndex = 7;
@@ -248,7 +242,7 @@
             panel3.BackColor = Color.FromArgb(128, 64, 64);
             panel3.Controls.Add(pictureBox3);
             panel3.Controls.Add(label1);
-            panel3.Location = new Point(14, 114);
+            panel3.Location = new Point(14, 150);
             panel3.Name = "panel3";
             panel3.Size = new Size(126, 39);
             panel3.TabIndex = 0;
@@ -279,48 +273,13 @@
             label1.Text = " Dashboard";
             label1.Click += label1_Click_1;
             // 
-            // panel6
-            // 
-            panel6.BackColor = Color.FromArgb(128, 64, 64);
-            panel6.Controls.Add(pictureBox4);
-            panel6.Controls.Add(label5);
-            panel6.Location = new Point(12, 284);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(126, 39);
-            panel6.TabIndex = 6;
-            panel6.Click += label5_Click;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(11, 9);
-            pictureBox4.Margin = new Padding(3, 2, 3, 2);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(27, 25);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 9;
-            pictureBox4.TabStop = false;
-            pictureBox4.Click += label5_Click;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.ForeColor = SystemColors.ButtonFace;
-            label5.Location = new Point(36, 13);
-            label5.Name = "label5";
-            label5.Size = new Size(56, 17);
-            label5.TabIndex = 10;
-            label5.Text = " Billings";
-            label5.Click += label5_Click;
-            // 
             // panel4
             // 
             panel4.BackColor = Color.FromArgb(128, 64, 64);
             panel4.Controls.Add(pictureBox5);
             panel4.Controls.Add(label3);
             panel4.Controls.Add(label2);
-            panel4.Location = new Point(13, 170);
+            panel4.Location = new Point(13, 206);
             panel4.Name = "panel4";
             panel4.Size = new Size(126, 36);
             panel4.TabIndex = 6;
@@ -365,7 +324,7 @@
             panel11.BackColor = Color.FromArgb(128, 64, 64);
             panel11.Controls.Add(pictureBox8);
             panel11.Controls.Add(label13);
-            panel11.Location = new Point(12, 225);
+            panel11.Location = new Point(12, 261);
             panel11.Name = "panel11";
             panel11.Size = new Size(126, 39);
             panel11.TabIndex = 6;
@@ -433,9 +392,6 @@
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
@@ -459,9 +415,6 @@
         private Panel panel3;
         private PictureBox pictureBox3;
         private Label label1;
-        private Panel panel6;
-        private PictureBox pictureBox4;
-        private Label label5;
         private Panel panel4;
         private PictureBox pictureBox5;
         private Label label3;

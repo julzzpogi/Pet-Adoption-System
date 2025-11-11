@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            label3 = new Label();
+            textBox2 = new TextBox();
+            dataGridView2 = new DataGridView();
             label2 = new Label();
             label1 = new Label();
             comboBox1 = new ComboBox();
@@ -41,7 +44,9 @@
             labelTitle = new Label();
             numericUpDown1 = new NumericUpDown();
             button5 = new Button();
+            label4 = new Label();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
@@ -50,6 +55,9 @@
             // 
             panel1.BackColor = Color.FromArgb(248, 248, 248);
             panel1.BorderStyle = BorderStyle.FixedSingle;
+            panel1.Controls.Add(label3);
+            panel1.Controls.Add(textBox2);
+            panel1.Controls.Add(dataGridView2);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(comboBox1);
@@ -59,6 +67,42 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(1201, 500);
             panel1.TabIndex = 0;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label3.Location = new Point(598, 28);
+            label3.Name = "label3";
+            label3.Size = new Size(43, 15);
+            label3.TabIndex = 7;
+            label3.Text = "Name:";
+            // 
+            // textBox2
+            // 
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
+            textBox2.Location = new Point(598, 46);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(215, 23);
+            textBox2.TabIndex = 6;
+            // 
+            // dataGridView2
+            // 
+            dataGridView2.AllowUserToAddRows = false;
+            dataGridView2.AllowUserToDeleteRows = false;
+            dataGridView2.BackgroundColor = Color.PeachPuff;
+            dataGridView2.BorderStyle = BorderStyle.None;
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.GridColor = Color.FromArgb(224, 224, 224);
+            dataGridView2.Location = new Point(598, 90);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.ReadOnly = true;
+            dataGridView2.RowHeadersVisible = false;
+            dataGridView2.RowHeadersWidth = 51;
+            dataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView2.Size = new Size(568, 385);
+            dataGridView2.TabIndex = 5;
+
             // 
             // label2
             // 
@@ -114,9 +158,9 @@
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(1158, 385);
+            dataGridView1.Size = new Size(510, 385);
             dataGridView1.TabIndex = 0;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+          
             // 
             // button1
             // 
@@ -143,9 +187,8 @@
             button2.Name = "button2";
             button2.Size = new Size(180, 40);
             button2.TabIndex = 3;
-            button2.Text = "Save Selection";
+            button2.Text = "Add to Cart";
             button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -158,7 +201,7 @@
             button3.Name = "button3";
             button3.Size = new Size(180, 40);
             button3.TabIndex = 4;
-            button3.Text = "Add Product";
+            button3.Text = "Remove Item";
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
@@ -173,8 +216,9 @@
             button4.Name = "button4";
             button4.Size = new Size(180, 40);
             button4.TabIndex = 5;
-            button4.Text = "Export Report";
+            button4.Text = "PAY";
             button4.UseVisualStyleBackColor = false;
+
             // 
             // labelTitle
             // 
@@ -188,7 +232,7 @@
             labelTitle.TabIndex = 6;
             labelTitle.Text = "Data Management System";
             labelTitle.TextAlign = ContentAlignment.MiddleCenter;
-            labelTitle.Click += labelTitle_Click;
+
             // 
             // numericUpDown1
             // 
@@ -196,6 +240,7 @@
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(120, 23);
             numericUpDown1.TabIndex = 7;
+            
             // 
             // button5
             // 
@@ -207,12 +252,24 @@
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = SystemColors.Control;
+            label4.Location = new Point(444, 610);
+            label4.Name = "label4";
+            label4.Size = new Size(154, 30);
+            label4.TabIndex = 10;
+            label4.Text = "Total Amount:";
+            // 
             // Form5
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 0, 0);
             ClientSize = new Size(1257, 660);
+            Controls.Add(label4);
             Controls.Add(button5);
             Controls.Add(numericUpDown1);
             Controls.Add(labelTitle);
@@ -228,9 +285,11 @@
             Text = "Data Management System";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -250,5 +309,9 @@
         private Button button5;
         private DataGridViewButtonColumn Save;
         private DataGridViewButtonColumn delete;
+        private Label label3;
+        private TextBox textBox2;
+        private DataGridView dataGridView2;
+        private Label label4;
     }
 }

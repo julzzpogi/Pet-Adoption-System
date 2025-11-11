@@ -132,9 +132,7 @@ namespace Pet__Adoption_System
 
         private void label5_Click(object sender, EventArgs e)
         {
-            Billings bill = new Billings();
-            bill.Show();
-            this.Hide();
+            
         }
     }
 }
