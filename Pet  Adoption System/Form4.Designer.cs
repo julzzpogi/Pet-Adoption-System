@@ -154,7 +154,7 @@
             // 
             // textBox1
             // 
-<<<<<<< HEAD
+
             textBox1.Location = new Point(14, 40);
             textBox1.Margin = new Padding(3, 4, 3, 4);
 
