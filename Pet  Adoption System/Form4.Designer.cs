@@ -157,9 +157,8 @@
 <<<<<<< HEAD
             textBox1.Location = new Point(14, 40);
             textBox1.Margin = new Padding(3, 4, 3, 4);
-=======
+
             textBox1.Location = new Point(12, 31);
->>>>>>> 123ee61f15ce1d51c95dcd0aa26977ac40d2d35e
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(580, 23);
             textBox1.TabIndex = 1;
