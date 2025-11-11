@@ -48,10 +48,13 @@
             button3 = new Button();
             button4 = new Button();
             labelTitle = new Label();
+            numericUpDown1 = new NumericUpDown();
+            button5 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -74,7 +77,7 @@
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label2.Location = new Point(340, 25);
             label2.Name = "label2";
-            label2.Size = new Size(50, 20);
+            label2.Size = new Size(39, 15);
             label2.TabIndex = 4;
             label2.Text = "Filter:";
             // 
@@ -84,7 +87,7 @@
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label1.Location = new Point(20, 25);
             label1.Name = "label1";
-            label1.Size = new Size(59, 20);
+            label1.Size = new Size(48, 15);
             label1.TabIndex = 3;
             label1.Text = "Search:";
             // 
@@ -95,7 +98,7 @@
             comboBox1.Items.AddRange(new object[] { "All Items", "Active Only", "Inactive Only", "By Category" });
             comboBox1.Location = new Point(340, 45);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(180, 28);
+            comboBox1.Size = new Size(180, 23);
             comboBox1.TabIndex = 2;
             // 
             // textBox1
@@ -104,7 +107,7 @@
             textBox1.Location = new Point(20, 45);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Enter search term...";
-            textBox1.Size = new Size(300, 27);
+            textBox1.Size = new Size(300, 23);
             textBox1.TabIndex = 1;
             // 
             // dataGridView1
@@ -147,7 +150,7 @@
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label5.Location = new Point(360, 25);
             label5.Name = "label5";
-            label5.Size = new Size(59, 20);
+            label5.Size = new Size(46, 15);
             label5.TabIndex = 8;
             label5.Text = "Field 3:";
             // 
@@ -157,7 +160,7 @@
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label4.Location = new Point(190, 25);
             label4.Name = "label4";
-            label4.Size = new Size(59, 20);
+            label4.Size = new Size(46, 15);
             label4.TabIndex = 7;
             label4.Text = "Field 2:";
             // 
@@ -167,7 +170,7 @@
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label3.Location = new Point(20, 25);
             label3.Name = "label3";
-            label3.Size = new Size(59, 20);
+            label3.Size = new Size(46, 15);
             label3.TabIndex = 6;
             label3.Text = "Field 1:";
             // 
@@ -177,7 +180,7 @@
             checkBox1.Font = new Font("Segoe UI", 9F);
             checkBox1.Location = new Point(516, 47);
             checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(72, 24);
+            checkBox1.Size = new Size(59, 19);
             checkBox1.TabIndex = 5;
             checkBox1.Text = "Active";
             checkBox1.UseVisualStyleBackColor = true;
@@ -187,7 +190,7 @@
             textBox4.BorderStyle = BorderStyle.FixedSingle;
             textBox4.Location = new Point(360, 45);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(150, 27);
+            textBox4.Size = new Size(150, 23);
             textBox4.TabIndex = 4;
             // 
             // textBox3
@@ -195,7 +198,7 @@
             textBox3.BorderStyle = BorderStyle.FixedSingle;
             textBox3.Location = new Point(190, 45);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(150, 27);
+            textBox3.Size = new Size(150, 23);
             textBox3.TabIndex = 3;
             // 
             // textBox2
@@ -203,7 +206,7 @@
             textBox2.BorderStyle = BorderStyle.FixedSingle;
             textBox2.Location = new Point(20, 45);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 27);
+            textBox2.Size = new Size(150, 23);
             textBox2.TabIndex = 2;
             // 
             // dataGridView2
@@ -262,8 +265,9 @@
             button3.Name = "button3";
             button3.Size = new Size(180, 40);
             button3.TabIndex = 4;
-            button3.Text = "Process Data";
+            button3.Text = "Add Product";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -284,20 +288,40 @@
             labelTitle.BackColor = Color.PeachPuff;
             labelTitle.Dock = DockStyle.Top;
             labelTitle.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            labelTitle.ForeColor = Color.White;
+            labelTitle.ForeColor = Color.Black;
             labelTitle.Location = new Point(0, 0);
             labelTitle.Name = "labelTitle";
             labelTitle.Size = new Size(1257, 60);
             labelTitle.TabIndex = 6;
             labelTitle.Text = "Data Management System";
             labelTitle.TextAlign = ContentAlignment.MiddleCenter;
+            labelTitle.Click += labelTitle_Click;
+            // 
+            // numericUpDown1
+            // 
+            numericUpDown1.Location = new Point(12, 612);
+            numericUpDown1.Name = "numericUpDown1";
+            numericUpDown1.Size = new Size(120, 23);
+            numericUpDown1.TabIndex = 7;
+            // 
+            // button5
+            // 
+            button5.Location = new Point(1148, 12);
+            button5.Name = "button5";
+            button5.Size = new Size(95, 31);
+            button5.TabIndex = 9;
+            button5.Text = "back";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // Form5
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 0, 0);
             ClientSize = new Size(1257, 660);
+            Controls.Add(button5);
+            Controls.Add(numericUpDown1);
             Controls.Add(labelTitle);
             Controls.Add(button4);
             Controls.Add(button3);
@@ -316,6 +340,7 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
         }
 
@@ -341,5 +366,7 @@
         private Label label4;
         private Label label5;
         private Label labelTitle;
+        private NumericUpDown numericUpDown1;
+        private Button button5;
     }
 }

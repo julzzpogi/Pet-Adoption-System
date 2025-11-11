@@ -57,21 +57,21 @@ namespace Pet__Adoption_System
             dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(245, 245, 245);
 
 
-            dataGridView1.Location = new Point(32, 234);
-            dataGridView1.Size = new Size(850, 178);
+            dataGridView1.Location = new Point(13, 39);
+            dataGridView1.Size = new Size(889, 350);
         }
         private void DisplayEmployee()
         {
 
             SqlConnection con = new SqlConnection(haha);
             con.Open();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM Table_1", con);
+            SqlCommand cmd = new SqlCommand("SELECT * FROM Pettable", con);
             SqlDataReader reader = cmd.ExecuteReader();
             DataTable dt = new DataTable();
             dt.Load(reader);
             dataGridView1.DataSource = dt;
             con.Close();
-            dataGridView1.Columns["employeeid"].Visible = false;
+            dataGridView1.Columns["Pet_ID"].Visible = false;
         }
         public void DeleteProduct(int ID)
         {
@@ -96,11 +96,6 @@ namespace Pet__Adoption_System
 
         }
 
-        private void label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -109,21 +104,21 @@ namespace Pet__Adoption_System
         private void button1_Click(object sender, EventArgs e)
         {
 
-           /* SqlConnection conn = new SqlConnection(haha);
-            conn.Open();
-            SqlCommand sqlCommand = new SqlCommand("Insert into Table_1 (employeename, employeeaddress, employeephonenumber,  employeeemail,employeepass) VALUES(@name, @address, @phonenumber, @email, @pass)", conn);
-            sqlCommand.Parameters.AddWithValue("@name", textBox1.Text);
-            sqlCommand.Parameters.AddWithValue("@address", richTextBox1.Text);
-            sqlCommand.Parameters.AddWithValue("@phonenumber", textBox2.Text);
-            sqlCommand.Parameters.AddWithValue("@email", richTextBox2.Text);
-            sqlCommand.Parameters.AddWithValue("@pass", textBox3.Text);
+            /* SqlConnection conn = new SqlConnection(haha);
+             conn.Open();
+             SqlCommand sqlCommand = new SqlCommand("Insert into Table_1 (employeename, employeeaddress, employeephonenumber,  employeeemail,employeepass) VALUES(@name, @address, @phonenumber, @email, @pass)", conn);
+             sqlCommand.Parameters.AddWithValue("@name", textBox1.Text);
+             sqlCommand.Parameters.AddWithValue("@address", richTextBox1.Text);
+             sqlCommand.Parameters.AddWithValue("@phonenumber", textBox2.Text);
+             sqlCommand.Parameters.AddWithValue("@email", richTextBox2.Text);
+             sqlCommand.Parameters.AddWithValue("@pass", textBox3.Text);
 
-            sqlCommand.ExecuteNonQuery();
-            conn.Close();
+             sqlCommand.ExecuteNonQuery();
+             conn.Close();
 
-            DisplayEmployee();
-            MessageBoxIcon ikun = MessageBoxIcon.Information;
-            MessageBox.Show("Successfully saved", "Information", MessageBoxButtons.OK, ikun);*/
+             DisplayEmployee();
+             MessageBoxIcon ikun = MessageBoxIcon.Information;
+             MessageBox.Show("Successfully saved", "Information", MessageBoxButtons.OK, ikun);*/
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -185,6 +180,47 @@ namespace Pet__Adoption_System
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+            this.Hide();
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
+        {
+            Form4 form4 = new Form4();
+            form4.Show();
+            this.Hide();
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            Billings bill = new Billings();
+            bill.Show();
+            this.Hide();
         }
     }
 }
