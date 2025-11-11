@@ -32,9 +32,6 @@
             panel1 = new Panel();
             panel13 = new Panel();
             label12 = new Label();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
             dataGridView1 = new DataGridView();
             panel10 = new Panel();
             panel8 = new Panel();
@@ -74,15 +71,12 @@
             // 
             panel1.BackColor = Color.PapayaWhip;
             panel1.Controls.Add(panel13);
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
             panel1.Controls.Add(dataGridView1);
             panel1.Location = new Point(191, 23);
             panel1.Name = "panel1";
             panel1.Size = new Size(919, 429);
             panel1.TabIndex = 9;
-            panel1.Paint += panel1_Paint;
+            
             // 
             // panel13
             // 
@@ -100,48 +94,9 @@
             label12.Font = new Font("Sitka Small", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label12.Location = new Point(4, 3);
             label12.Name = "label12";
-            label12.Size = new Size(132, 24);
+            label12.Size = new Size(103, 24);
             label12.TabIndex = 18;
-            label12.Text = "~~ History ~~";
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(128, 64, 64);
-            button3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.ForeColor = SystemColors.ButtonHighlight;
-            button3.Location = new Point(550, 394);
-            button3.Margin = new Padding(3, 2, 3, 2);
-            button3.Name = "button3";
-            button3.Size = new Size(155, 28);
-            button3.TabIndex = 23;
-            button3.Text = "DELETE Supplier";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.FromArgb(128, 64, 64);
-            button2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = SystemColors.ButtonHighlight;
-            button2.Location = new Point(371, 394);
-            button2.Margin = new Padding(3, 2, 3, 2);
-            button2.Name = "button2";
-            button2.Size = new Size(156, 28);
-            button2.TabIndex = 22;
-            button2.Text = "edit supplier";
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(128, 64, 64);
-            button1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(186, 394);
-            button1.Margin = new Padding(3, 2, 3, 2);
-            button1.Name = "button1";
-            button1.Size = new Size(163, 28);
-            button1.TabIndex = 21;
-            button1.Text = "ADD Supplier";
-            button1.UseVisualStyleBackColor = false;
+            label12.Text = "~~Logs ~~";
             // 
             // dataGridView1
             // 
@@ -160,7 +115,7 @@
             panel10.Name = "panel10";
             panel10.Size = new Size(1116, 8);
             panel10.TabIndex = 19;
-            panel10.Paint += panel10_Paint;
+            
             // 
             // panel8
             // 
@@ -192,7 +147,7 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(152, 429);
             panel2.TabIndex = 21;
-            panel2.Paint += panel2_Paint;
+            
             // 
             // panel7
             // 
@@ -247,7 +202,7 @@
             panel3.Size = new Size(126, 39);
             panel3.TabIndex = 0;
             panel3.Click += label1_Click;
-            panel3.Paint += panel3_Paint;
+         
             // 
             // pictureBox3
             // 
@@ -328,7 +283,7 @@
             panel11.Name = "panel11";
             panel11.Size = new Size(126, 39);
             panel11.TabIndex = 6;
-            panel11.Click += label13_Click;
+
             // 
             // pictureBox8
             // 
@@ -340,7 +295,7 @@
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 12;
             pictureBox8.TabStop = false;
-            pictureBox8.Click += label13_Click;
+
             // 
             // label13
             // 
@@ -352,7 +307,7 @@
             label13.Size = new Size(39, 17);
             label13.TabIndex = 9;
             label13.Text = "Logs";
-            label13.Click += label13_Click_1;
+
             // 
             // panel12
             // 
@@ -423,9 +378,6 @@
         private PictureBox pictureBox8;
         private Label label13;
         private Panel panel12;
-        private Button button3;
-        private Button button2;
-        private Button button1;
         private Panel panel13;
         private Label label12;
     }
