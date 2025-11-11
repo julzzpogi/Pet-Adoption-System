@@ -357,7 +357,7 @@
             // 
             label14.AutoSize = true;
             label14.ForeColor = SystemColors.ButtonHighlight;
-            label14.Location = new Point(4, 28);
+            label14.Location = new Point(10, 28);
             label14.Name = "label14";
             label14.Size = new Size(130, 15);
             label14.TabIndex = 6;
@@ -377,7 +377,7 @@
             // 
             label13.AutoSize = true;
             label13.ForeColor = SystemColors.ButtonHighlight;
-            label13.Location = new Point(33, 28);
+            label13.Location = new Point(36, 28);
             label13.Name = "label13";
             label13.Size = new Size(74, 15);
             label13.TabIndex = 5;
