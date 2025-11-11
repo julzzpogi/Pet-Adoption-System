@@ -34,15 +34,6 @@
             comboBox1 = new ComboBox();
             textBox1 = new TextBox();
             dataGridView1 = new DataGridView();
-            panel2 = new Panel();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            checkBox1 = new CheckBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            dataGridView2 = new DataGridView();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -50,11 +41,8 @@
             labelTitle = new Label();
             numericUpDown1 = new NumericUpDown();
             button5 = new Button();
-            label6 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
             SuspendLayout();
             // 
@@ -69,7 +57,7 @@
             panel1.Controls.Add(dataGridView1);
             panel1.Location = new Point(25, 80);
             panel1.Name = "panel1";
-            panel1.Size = new Size(550, 500);
+            panel1.Size = new Size(1201, 500);
             panel1.TabIndex = 0;
             // 
             // label2
@@ -111,6 +99,7 @@
             textBox1.PlaceholderText = "Enter search term...";
             textBox1.Size = new Size(300, 23);
             textBox1.TabIndex = 1;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // dataGridView1
             // 
@@ -126,107 +115,9 @@
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView1.Size = new Size(500, 385);
+            dataGridView1.Size = new Size(1158, 385);
             dataGridView1.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.FromArgb(248, 248, 248);
-            panel2.BorderStyle = BorderStyle.FixedSingle;
-            panel2.Controls.Add(label6);
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(label4);
-            panel2.Controls.Add(label3);
-            panel2.Controls.Add(checkBox1);
-            panel2.Controls.Add(textBox4);
-            panel2.Controls.Add(textBox3);
-            panel2.Controls.Add(textBox2);
-            panel2.Controls.Add(dataGridView2);
-            panel2.Location = new Point(600, 80);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(627, 500);
-            panel2.TabIndex = 1;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label5.Location = new Point(360, 25);
-            label5.Name = "label5";
-            label5.Size = new Size(46, 15);
-            label5.TabIndex = 8;
-            label5.Text = "Field 3:";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label4.Location = new Point(190, 25);
-            label4.Name = "label4";
-            label4.Size = new Size(46, 15);
-            label4.TabIndex = 7;
-            label4.Text = "Field 2:";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label3.Location = new Point(20, 25);
-            label3.Name = "label3";
-            label3.Size = new Size(46, 15);
-            label3.TabIndex = 6;
-            label3.Text = "Field 1:";
-            // 
-            // checkBox1
-            // 
-            checkBox1.AutoSize = true;
-            checkBox1.Font = new Font("Segoe UI", 9F);
-            checkBox1.Location = new Point(580, 51);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(15, 14);
-            checkBox1.TabIndex = 5;
-            checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // textBox4
-            // 
-            textBox4.BorderStyle = BorderStyle.FixedSingle;
-            textBox4.Location = new Point(360, 45);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(150, 23);
-            textBox4.TabIndex = 4;
-            // 
-            // textBox3
-            // 
-            textBox3.BorderStyle = BorderStyle.FixedSingle;
-            textBox3.Location = new Point(190, 45);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(150, 23);
-            textBox3.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Location = new Point(20, 45);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(150, 23);
-            textBox2.TabIndex = 2;
-            // 
-            // dataGridView2
-            // 
-            dataGridView2.AllowUserToAddRows = false;
-            dataGridView2.AllowUserToDeleteRows = false;
-            dataGridView2.BackgroundColor = Color.PeachPuff;
-            dataGridView2.BorderStyle = BorderStyle.None;
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.GridColor = Color.FromArgb(224, 224, 224);
-            dataGridView2.Location = new Point(20, 90);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.ReadOnly = true;
-            dataGridView2.RowHeadersVisible = false;
-            dataGridView2.RowHeadersWidth = 51;
-            dataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dataGridView2.Size = new Size(584, 385);
-            dataGridView2.TabIndex = 1;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // button1
             // 
@@ -316,16 +207,6 @@
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label6.Location = new Point(550, 49);
-            label6.Name = "label6";
-            label6.Size = new Size(30, 15);
-            label6.TabIndex = 9;
-            label6.Text = "Paid";
-            // 
             // Form5
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -339,7 +220,6 @@
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Controls.Add(panel2);
             Controls.Add(panel1);
             Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             FormBorderStyle = FormBorderStyle.None;
@@ -349,9 +229,6 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
         }
@@ -361,25 +238,15 @@
         private Panel panel1;
         private TextBox textBox1;
         private DataGridView dataGridView1;
-        private Panel panel2;
-        private DataGridView dataGridView2;
         private ComboBox comboBox1;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private CheckBox checkBox1;
         private Button button1;
         private Button button2;
         private Button button3;
         private Button button4;
         private Label label1;
         private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
         private Label labelTitle;
         private NumericUpDown numericUpDown1;
         private Button button5;
-        private Label label6;
     }
 }
