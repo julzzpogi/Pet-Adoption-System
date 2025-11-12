@@ -139,7 +139,7 @@ namespace Pet__Adoption_System
 
         private void label6_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("Changes saved successfully.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Successfully Logout.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Form1 form1 = new Form1();
             form1.Show();
             this.Hide();
