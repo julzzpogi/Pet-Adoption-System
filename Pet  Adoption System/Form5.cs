@@ -430,9 +430,7 @@ namespace Pet__Adoption_System
 
         private void button3_Click(object sender, EventArgs e)
         {
-            add_products ap = new add_products();
-            ap.Show();
-            this.Hide();
+            
         }
 
         private void button5_Click(object sender, EventArgs e)
