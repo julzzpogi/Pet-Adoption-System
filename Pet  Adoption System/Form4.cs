@@ -24,6 +24,7 @@ namespace Pet__Adoption_System
             DisplayProduct();
 
         }
+
         private void StyleProductGrid()
         {
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -31,7 +32,6 @@ namespace Pet__Adoption_System
             dataGridView1.ColumnHeadersHeight = 40;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.MultiSelect = false;
-            dataGridView1.ReadOnly = true;
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AllowUserToResizeRows = false;
@@ -40,34 +40,33 @@ namespace Pet__Adoption_System
             dataGridView1.BackgroundColor = Color.White;
             dataGridView1.GridColor = Color.LightGray;
 
-
             dataGridView1.EnableHeadersVisualStyles = false;
-            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(52, 152, 219); // Blue header
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(52, 152, 219);
             dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
             dataGridView1.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 11, FontStyle.Bold);
             dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
-
             dataGridView1.DefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Regular);
             dataGridView1.DefaultCellStyle.ForeColor = Color.Black;
             dataGridView1.DefaultCellStyle.BackColor = Color.White;
-            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(173, 216, 230); // Light blue
+            dataGridView1.DefaultCellStyle.SelectionBackColor = Color.FromArgb(173, 216, 230);
             dataGridView1.DefaultCellStyle.SelectionForeColor = Color.Black;
             dataGridView1.DefaultCellStyle.Padding = new Padding(5, 3, 5, 3);
             dataGridView1.RowTemplate.Height = 35;
 
-
             dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(245, 245, 245);
-
 
             dataGridView1.Location = new Point(9, 73);
             dataGridView1.Size = new Size(919, 340);
-            
 
+            // Make grid editable (except for Pet_ID, set after data binding)
+            dataGridView1.ReadOnly = false;
         }
+
+
+
         private void DisplayProduct()
         {
-
             SqlConnection con = new SqlConnection(haha);
             con.Open();
             SqlCommand cmd = new SqlCommand("SELECT * FROM Pettable", con);
@@ -77,6 +76,13 @@ namespace Pet__Adoption_System
             dataGridView1.DataSource = dt;
             con.Close();
             dataGridView1.Columns["Pet_ID"].Visible = false;
+
+            // Make all columns editable except Pet_ID
+            foreach (DataGridViewColumn col in dataGridView1.Columns)
+            {
+                col.ReadOnly = col.Name == "Pet_ID";
+            }
+            dataGridView1.ReadOnly = false;
         }
         public void DeleteProduct(int ID)
         {
@@ -270,9 +276,7 @@ namespace Pet__Adoption_System
 
         private void label5_Click(object sender, EventArgs e)
         {
-            Billings bill = new Billings();
-            bill.Show();
-            this.Hide();
+
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -322,6 +326,53 @@ namespace Pet__Adoption_System
             {
                 MessageBox.Show("Please select a product to delete.", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            using (SqlConnection con = new SqlConnection(haha))
+            {
+                con.Open();
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    if (row.IsNewRow) continue;
+
+                    int petId = Convert.ToInt32(row.Cells["Pet_ID"].Value);
+                    string petName = row.Cells["Pet_Name"].Value?.ToString() ?? "";
+                    string petBreed = row.Cells["Pet_Breed"].Value?.ToString() ?? "";
+                    string petCategory = row.Cells["Pet_Category"].Value?.ToString() ?? "";
+                    string petsex = row.Cells["Pet_Sex"].Value?.ToString() ?? "";
+                    int petage = Convert.ToInt32(row.Cells["Pet_Age"].Value);
+                    decimal petprice = Convert.ToDecimal(row.Cells["Pet_Price"].Value);
+                    int petquantity = Convert.ToInt32(row.Cells["Pet_Quantity"].Value);
+
+
+                    // Add more fields as needed
+
+                    string query = "UPDATE Pettable SET Pet_Name=@name, Pet_Breed=@breed, Pet_Category=@category, Pet_Sex=@sex, Pet_Age = @age, Pet_Price = @price, Pet_Quantity = @quanti WHERE Pet_ID=@id";
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        cmd.Parameters.AddWithValue("@name", petName);
+                        cmd.Parameters.AddWithValue("@breed", petBreed);
+                        cmd.Parameters.AddWithValue("@category", petCategory);
+                        cmd.Parameters.AddWithValue("@sex", petsex);
+                        cmd.Parameters.AddWithValue("@age", petage);
+                        cmd.Parameters.AddWithValue("@price", petprice);
+                        cmd.Parameters.AddWithValue("@quanti", petquantity);
+                        cmd.Parameters.AddWithValue("@id", petId);
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+                con.Close();
+            }
+            MessageBox.Show("Changes saved successfully.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            DisplayProduct(); // Refresh grid
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 

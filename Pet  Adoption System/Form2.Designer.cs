@@ -39,9 +39,6 @@
             panel5 = new Panel();
             pictureBox6 = new PictureBox();
             label4 = new Label();
-            panel6 = new Panel();
-            pictureBox4 = new PictureBox();
-            label5 = new Label();
             panel7 = new Panel();
             pictureBox7 = new PictureBox();
             label6 = new Label();
@@ -75,8 +72,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             panel1.SuspendLayout();
@@ -96,8 +91,12 @@
             panel2.BackColor = Color.FromArgb(128, 64, 64);
             panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(label1);
+
             panel2.Location = new Point(16, 159);
             panel2.Margin = new Padding(3, 4, 3, 4);
+
+            panel2.Location = new Point(14, 166);
+
             panel2.Name = "panel2";
             panel2.Size = new Size(144, 52);
             panel2.TabIndex = 0;
@@ -130,8 +129,12 @@
             panel3.Controls.Add(pictureBox3);
             panel3.Controls.Add(label3);
             panel3.Controls.Add(label2);
+
             panel3.Location = new Point(14, 245);
             panel3.Margin = new Padding(3, 4, 3, 4);
+
+            panel3.Location = new Point(12, 231);
+
             panel3.Name = "panel3";
             panel3.Size = new Size(144, 48);
             panel3.TabIndex = 6;
@@ -176,8 +179,12 @@
             panel5.BackColor = Color.FromArgb(128, 64, 64);
             panel5.Controls.Add(pictureBox6);
             panel5.Controls.Add(label4);
+
             panel5.Location = new Point(14, 331);
             panel5.Margin = new Padding(3, 4, 3, 4);
+
+            panel5.Location = new Point(12, 295);
+
             panel5.Name = "panel5";
             panel5.Size = new Size(144, 52);
             panel5.TabIndex = 6;
@@ -206,6 +213,7 @@
             label4.Text = "Logs";
             label4.Click += label4_Click;
             // 
+
             // panel6
             // 
             panel6.BackColor = Color.FromArgb(128, 64, 64);
@@ -241,13 +249,19 @@
             label5.Text = " Billings";
             label5.Click += label5_Click;
             // 
+
+
             // panel7
             // 
             panel7.BackColor = Color.FromArgb(128, 64, 64);
             panel7.Controls.Add(pictureBox7);
             panel7.Controls.Add(label6);
+
             panel7.Location = new Point(14, 512);
             panel7.Margin = new Padding(3, 4, 3, 4);
+
+            panel7.Location = new Point(12, 367);
+
             panel7.Name = "panel7";
             panel7.Size = new Size(144, 52);
             panel7.TabIndex = 7;
@@ -476,7 +490,6 @@
             panel9.Controls.Add(panel7);
             panel9.Controls.Add(pictureBox1);
             panel9.Controls.Add(panel2);
-            panel9.Controls.Add(panel6);
             panel9.Controls.Add(panel3);
             panel9.Controls.Add(panel5);
             panel9.Location = new Point(26, 29);
@@ -555,9 +568,6 @@
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             panel7.ResumeLayout(false);
             panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
@@ -586,7 +596,6 @@
         private Label label1;
         private Panel panel3;
         private Panel panel5;
-        private Panel panel6;
         private Panel panel7;
         private Label label8;
         private Label label7;
@@ -600,11 +609,9 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private Label label5;
         private Label label6;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
         private Label label10;

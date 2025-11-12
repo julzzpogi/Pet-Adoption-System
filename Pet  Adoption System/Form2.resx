@@ -9880,6 +9880,7 @@
         elRUVFRU1BugCPSoqKioqKg3QAR0/E9UVFRUVFTU66v/+8EH/+//Azl3kEnX27xcAAAAAElFTkSuQmCC
 </value>
   </data>
+<<<<<<< HEAD
   <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s
@@ -13346,6 +13347,8 @@
         hU7+j4yMjIyMjMz/Xj6Iivr//n+oelRUwGVrzgAAAABJRU5ErkJggg==
 </value>
   </data>
+=======
+>>>>>>> a34b8a97e9839d42b68cfdd0f24f2f9808fb919d
   <data name="pictureBox7.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAABGdBTUEAALGPC/xhBQAA/8dJREFUeF7s

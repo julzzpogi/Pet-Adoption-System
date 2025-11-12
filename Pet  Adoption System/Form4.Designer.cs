@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             panel1 = new Panel();
+            button2 = new Button();
             button3 = new Button();
             button1 = new Button();
             panel8 = new Panel();
@@ -46,9 +47,6 @@
             panel2 = new Panel();
             pictureBox2 = new PictureBox();
             label1 = new Label();
-            panel6 = new Panel();
-            pictureBox4 = new PictureBox();
-            label5 = new Label();
             panel3 = new Panel();
             pictureBox3 = new PictureBox();
             label3 = new Label();
@@ -69,8 +67,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel5.SuspendLayout();
@@ -80,6 +76,7 @@
             // panel1
             // 
             panel1.BackColor = Color.PapayaWhip;
+            panel1.Controls.Add(button2);
             panel1.Controls.Add(button3);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(panel8);
@@ -89,6 +86,20 @@
             panel1.Size = new Size(935, 460);
             panel1.TabIndex = 16;
             panel1.Paint += panel1_Paint;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(128, 64, 64);
+            button2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.ForeColor = SystemColors.ButtonHighlight;
+            button2.Location = new Point(375, 423);
+            button2.Margin = new Padding(3, 2, 3, 2);
+            button2.Name = "button2";
+            button2.Size = new Size(163, 28);
+            button2.TabIndex = 21;
+            button2.Text = "EDIT";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -190,7 +201,6 @@
             panel9.Controls.Add(panel7);
             panel9.Controls.Add(pictureBox1);
             panel9.Controls.Add(panel2);
-            panel9.Controls.Add(panel6);
             panel9.Controls.Add(panel3);
             panel9.Controls.Add(panel5);
             panel9.Location = new Point(24, 24);
@@ -203,10 +213,11 @@
             panel7.BackColor = Color.FromArgb(128, 64, 64);
             panel7.Controls.Add(pictureBox7);
             panel7.Controls.Add(label6);
-            panel7.Location = new Point(12, 394);
+            panel7.Location = new Point(12, 346);
             panel7.Name = "panel7";
             panel7.Size = new Size(126, 39);
             panel7.TabIndex = 7;
+          
             // 
             // pictureBox7
             // 
@@ -246,7 +257,7 @@
             panel2.BackColor = Color.FromArgb(128, 64, 64);
             panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(label1);
-            panel2.Location = new Point(14, 133);
+            panel2.Location = new Point(14, 169);
             panel2.Name = "panel2";
             panel2.Size = new Size(126, 39);
             panel2.TabIndex = 0;
@@ -276,49 +287,17 @@
             label1.Text = " Dashboard";
             label1.Click += label1_Click_1;
             // 
-            // panel6
-            // 
-            panel6.BackColor = Color.FromArgb(128, 64, 64);
-            panel6.Controls.Add(pictureBox4);
-            panel6.Controls.Add(label5);
-            panel6.Location = new Point(12, 306);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(126, 39);
-            panel6.TabIndex = 6;
-            panel6.Click += label5_Click;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(11, 9);
-            pictureBox4.Margin = new Padding(3, 2, 3, 2);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(27, 25);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 9;
-            pictureBox4.TabStop = false;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.ForeColor = SystemColors.ButtonFace;
-            label5.Location = new Point(36, 13);
-            label5.Name = "label5";
-            label5.Size = new Size(56, 17);
-            label5.TabIndex = 10;
-            label5.Text = " Billings";
-            // 
             // panel3
             // 
             panel3.BackColor = Color.FromArgb(128, 64, 64);
             panel3.Controls.Add(pictureBox3);
             panel3.Controls.Add(label3);
             panel3.Controls.Add(label2);
-            panel3.Location = new Point(13, 192);
+            panel3.Location = new Point(13, 228);
             panel3.Name = "panel3";
             panel3.Size = new Size(126, 36);
             panel3.TabIndex = 6;
+            
             // 
             // pictureBox3
             // 
@@ -357,11 +336,12 @@
             panel5.BackColor = Color.FromArgb(128, 64, 64);
             panel5.Controls.Add(pictureBox6);
             panel5.Controls.Add(label13);
-            panel5.Location = new Point(12, 246);
+            panel5.Location = new Point(12, 282);
             panel5.Name = "panel5";
             panel5.Size = new Size(126, 39);
             panel5.TabIndex = 6;
             panel5.Click += label4_Click;
+            panel5.Paint += panel5_Paint;
             // 
             // pictureBox6
             // 
@@ -452,9 +432,6 @@
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
@@ -470,8 +447,6 @@
         private Label label6;
         private Panel panel3;
         private Label label2;
-        private Panel panel6;
-        private Label label5;
         private Panel panel5;
         private Label label3;
         private Panel panel2;
@@ -486,7 +461,6 @@
         private PictureBox pictureBox7;
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private PictureBox pictureBox4;
         private PictureBox pictureBox3;
         private PictureBox pictureBox6;
         private Label label13;
@@ -497,5 +471,6 @@
         private Label label14;
         private Button button3;
         private Button button1;
+        private Button button2;
     }
 }

@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+
+
+            panel1 = new Panel();
+            panel13 = new Panel();
+            label12 = new Label();
+            dataGridView1 = new DataGridView();
+
             panel10 = new Panel();
             panel8 = new Panel();
             panel9 = new Panel();
@@ -40,9 +47,6 @@
             panel3 = new Panel();
             pictureBox3 = new PictureBox();
             label1 = new Label();
-            panel6 = new Panel();
-            pictureBox4 = new PictureBox();
-            label5 = new Label();
             panel4 = new Panel();
             pictureBox5 = new PictureBox();
             label3 = new Label();
@@ -61,8 +65,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panel11.SuspendLayout();
@@ -72,6 +74,47 @@
             panel1.SuspendLayout();
             SuspendLayout();
             // 
+          // panel1
+            // 
+            panel1.BackColor = Color.PapayaWhip;
+            panel1.Controls.Add(panel13);
+            panel1.Controls.Add(dataGridView1);
+            panel1.Location = new Point(191, 23);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(919, 429);
+            panel1.TabIndex = 9;
+            
+            // 
+            // panel13
+            // 
+            panel13.BackColor = Color.PeachPuff;
+            panel13.Controls.Add(label12);
+            panel13.Location = new Point(16, 5);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(889, 28);
+            panel13.TabIndex = 24;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.BackColor = Color.PeachPuff;
+            label12.Font = new Font("Sitka Small", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.Location = new Point(4, 3);
+            label12.Name = "label12";
+            label12.Size = new Size(103, 24);
+            label12.TabIndex = 18;
+            label12.Text = "~~Logs ~~";
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(13, 39);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(889, 350);
+            dataGridView1.TabIndex = 0;
+            // 
+
             // panel10
             // 
             panel10.BackColor = Color.PeachPuff;
@@ -79,7 +122,7 @@
             panel10.Name = "panel10";
             panel10.Size = new Size(1275, 11);
             panel10.TabIndex = 19;
-            panel10.Paint += panel10_Paint;
+            
             // 
             // panel8
             // 
@@ -103,7 +146,6 @@
             panel2.Controls.Add(panel7);
             panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(panel3);
-            panel2.Controls.Add(panel6);
             panel2.Controls.Add(panel4);
             panel2.Controls.Add(panel11);
             panel2.Location = new Point(25, 31);
@@ -111,15 +153,19 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(174, 572);
             panel2.TabIndex = 21;
-            panel2.Paint += panel2_Paint;
+            
             // 
             // panel7
             // 
             panel7.BackColor = Color.FromArgb(128, 64, 64);
             panel7.Controls.Add(pictureBox7);
             panel7.Controls.Add(label6);
+
             panel7.Location = new Point(14, 491);
             panel7.Margin = new Padding(3, 4, 3, 4);
+
+            panel7.Location = new Point(12, 329);
+
             panel7.Name = "panel7";
             panel7.Size = new Size(144, 52);
             panel7.TabIndex = 7;
@@ -160,13 +206,17 @@
             panel3.BackColor = Color.FromArgb(128, 64, 64);
             panel3.Controls.Add(pictureBox3);
             panel3.Controls.Add(label1);
+
             panel3.Location = new Point(16, 152);
             panel3.Margin = new Padding(3, 4, 3, 4);
+
+            panel3.Location = new Point(14, 150);
+
             panel3.Name = "panel3";
             panel3.Size = new Size(144, 52);
             panel3.TabIndex = 0;
             panel3.Click += label1_Click;
-            panel3.Paint += panel3_Paint;
+         
             // 
             // pictureBox3
             // 
@@ -191,6 +241,7 @@
             label1.Text = " Dashboard";
             label1.Click += label1_Click_1;
             // 
+
             // panel6
             // 
             panel6.BackColor = Color.FromArgb(128, 64, 64);
@@ -226,14 +277,19 @@
             label5.Text = " Billings";
             label5.Click += label5_Click;
             // 
+
             // panel4
             // 
             panel4.BackColor = Color.FromArgb(128, 64, 64);
             panel4.Controls.Add(pictureBox5);
             panel4.Controls.Add(label3);
             panel4.Controls.Add(label2);
+
             panel4.Location = new Point(15, 227);
             panel4.Margin = new Padding(3, 4, 3, 4);
+
+            panel4.Location = new Point(13, 206);
+
             panel4.Name = "panel4";
             panel4.Size = new Size(144, 48);
             panel4.TabIndex = 6;
@@ -277,12 +333,16 @@
             panel11.BackColor = Color.FromArgb(128, 64, 64);
             panel11.Controls.Add(pictureBox8);
             panel11.Controls.Add(label13);
+
             panel11.Location = new Point(14, 300);
             panel11.Margin = new Padding(3, 4, 3, 4);
+
+            panel11.Location = new Point(12, 261);
+
             panel11.Name = "panel11";
             panel11.Size = new Size(144, 52);
             panel11.TabIndex = 6;
-            panel11.Click += label13_Click;
+
             // 
             // pictureBox8
             // 
@@ -293,7 +353,7 @@
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 12;
             pictureBox8.TabStop = false;
-            pictureBox8.Click += label13_Click;
+
             // 
             // label13
             // 
@@ -305,7 +365,7 @@
             label13.Size = new Size(46, 20);
             label13.TabIndex = 9;
             label13.Text = "Logs";
-            label13.Click += label13_Click_1;
+
             // 
             // panel12
             // 
@@ -384,9 +444,6 @@
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             panel4.ResumeLayout(false);
             panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
@@ -412,9 +469,6 @@
         private Panel panel3;
         private PictureBox pictureBox3;
         private Label label1;
-        private Panel panel6;
-        private PictureBox pictureBox4;
-        private Label label5;
         private Panel panel4;
         private PictureBox pictureBox5;
         private Label label3;
@@ -423,7 +477,10 @@
         private PictureBox pictureBox8;
         private Label label13;
         private Panel panel12;
+<<<<<<< HEAD
         private DataGridView dataGridView1;
+=======
+>>>>>>> a34b8a97e9839d42b68cfdd0f24f2f9808fb919d
         private Panel panel13;
         private Label label12;
         private Panel panel1;
