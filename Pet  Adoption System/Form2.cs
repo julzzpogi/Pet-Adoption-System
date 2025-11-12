@@ -16,14 +16,14 @@ namespace Pet__Adoption_System
 {
     public partial class Form2 : Form
     {
-       string connectionString = @"Data Source=DESKTOP-RPJP9D9\SQLEXPRESS;Initial Catalog=julzz;Integrated Security=True;Trust Server Certificate=True"; 
+        string connectionString = @"Data Source=DESKTOP-RPJP9D9\SQLEXPRESS;Initial Catalog=julzz;Integrated Security=True;Trust Server Certificate=True";
 
         public Form2()
         {
             InitializeComponent();
             DisplayEmployee();
             LoadTotalSales();
-            
+
         }
         private void LoadTotalSales()
         {
@@ -100,7 +100,7 @@ namespace Pet__Adoption_System
             SqlCommand cmd = new SqlCommand("SELECT * FROM Ordertbl", con);
             SqlDataReader reader = cmd.ExecuteReader();
             DataTable dt = new DataTable();
-           
+
             con.Close();
 
         }
@@ -112,7 +112,7 @@ namespace Pet__Adoption_System
 
 
         }
-    
+
 
         private void label1_Click(object sender, EventArgs e)
         {
@@ -215,7 +215,17 @@ namespace Pet__Adoption_System
 
         private void label5_Click(object sender, EventArgs e)
         {
-            
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Changes saved successfully.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+          
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
+
         }
     }
 }

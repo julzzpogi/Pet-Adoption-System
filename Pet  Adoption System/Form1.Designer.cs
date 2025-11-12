@@ -56,33 +56,10 @@
             panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
-            // 
-<<<<<<< HEAD
-            // panel2
-            // 
-            panel2.BackColor = Color.PeachPuff;
-            panel2.Controls.Add(pictureBox1);
-            panel2.Location = new Point(19, 88);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(322, 267);
-            panel2.TabIndex = 1;
-            panel2.Paint += panel2_Paint;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(4, 2);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(317, 262);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
-=======
->>>>>>> faaa46d55d62cc95cb41dab32c23a2f1683c8969
-            // textBox1
-            // 
+     
+
+
+
             textBox1.BackColor = Color.PeachPuff;
             textBox1.Location = new Point(419, 214);
             textBox1.Name = "textBox1";
@@ -135,7 +112,7 @@
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+      
             pictureBox4.Location = new Point(3, 9);
             pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
@@ -146,7 +123,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+
             pictureBox2.Location = new Point(111, 2);
             pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
@@ -157,7 +134,7 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+          
             pictureBox3.Location = new Point(540, 9);
             pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
@@ -168,13 +145,8 @@
             // 
             // pictureBox5
             // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-<<<<<<< HEAD
-            pictureBox5.Location = new Point(460, 88);
-            pictureBox5.Margin = new Padding(3, 2, 3, 2);
-=======
-            pictureBox5.Location = new Point(526, 115);
->>>>>>> faaa46d55d62cc95cb41dab32c23a2f1683c8969
+       
+
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(130, 100);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -211,44 +183,8 @@
             panel5.TabIndex = 15;
             // 
             // panel4
-            // 
-<<<<<<< HEAD
-            panel4.BackColor = Color.Sienna;
-            panel4.Location = new Point(692, 9);
-            panel4.Margin = new Padding(3, 2, 3, 2);
-=======
-            panel4.BackColor = Color.PeachPuff;
-            panel4.Location = new Point(791, 12);
->>>>>>> faaa46d55d62cc95cb41dab32c23a2f1683c8969
-            panel4.Name = "panel4";
-            panel4.Size = new Size(9, 359);
-            panel4.TabIndex = 14;
-            // 
-            // panel8
-            // 
-<<<<<<< HEAD
-            panel8.BackColor = Color.Sienna;
-            panel8.Location = new Point(5, 363);
-            panel8.Margin = new Padding(3, 2, 3, 2);
-=======
-            panel8.BackColor = Color.PeachPuff;
-            panel8.Location = new Point(6, 484);
->>>>>>> faaa46d55d62cc95cb41dab32c23a2f1683c8969
-            panel8.Name = "panel8";
-            panel8.Size = new Size(696, 8);
-            panel8.TabIndex = 17;
-            // 
-            // panel7
-            // 
-<<<<<<< HEAD
-            panel7.BackColor = Color.Sienna;
-            panel7.Location = new Point(5, 5);
-            panel7.Margin = new Padding(3, 2, 3, 2);
-=======
-            panel7.BackColor = Color.PeachPuff;
-            panel7.Controls.Add(panel2);
-            panel7.Location = new Point(6, 7);
->>>>>>> faaa46d55d62cc95cb41dab32c23a2f1683c8969
+
+
             panel7.Name = "panel7";
             panel7.Size = new Size(696, 8);
             panel7.TabIndex = 16;
@@ -262,7 +198,7 @@
             // 
             // pictureBox6
             // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+         
             pictureBox6.Location = new Point(9, 12);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(792, 482);

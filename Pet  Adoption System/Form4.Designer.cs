@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             panel1 = new Panel();
             button2 = new Button();
             button3 = new Button();
@@ -165,11 +164,8 @@
             // 
             // textBox1
             // 
-
-            textBox1.Location = new Point(14, 40);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-
             textBox1.Location = new Point(12, 31);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Search an item by Name and breed...";
             textBox1.Size = new Size(580, 23);
@@ -217,11 +213,10 @@
             panel7.Name = "panel7";
             panel7.Size = new Size(126, 39);
             panel7.TabIndex = 7;
-          
+            panel7.Click += label6_Click;
             // 
             // pictureBox7
             // 
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
             pictureBox7.Location = new Point(10, 8);
             pictureBox7.Margin = new Padding(3, 2, 3, 2);
             pictureBox7.Name = "pictureBox7";
@@ -240,10 +235,10 @@
             label6.Size = new Size(52, 17);
             label6.TabIndex = 11;
             label6.Text = "Logout";
+            label6.Click += label6_Click;
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(2, 14);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
@@ -266,7 +261,6 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
             pictureBox2.Location = new Point(4, 9);
             pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
@@ -297,11 +291,9 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(126, 36);
             panel3.TabIndex = 6;
-            
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(4, 2);
             pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
@@ -345,7 +337,6 @@
             // 
             // pictureBox6
             // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
             pictureBox6.Location = new Point(9, 9);
             pictureBox6.Margin = new Padding(3, 2, 3, 2);
             pictureBox6.Name = "pictureBox6";
