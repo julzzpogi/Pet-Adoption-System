@@ -97,26 +97,7 @@ namespace Pet__Adoption_System
                 }
             }
         }
-        public void search()
-        {
-            //SqlConnection con = new SqlConnection(haha);
-            //con.Open();
-
-            //SqlCommand cmd = new SqlCommand("SELECT  * FROM Pettable where Pet_Name = @category", con);
-            //string selectedCategory = comboBox1.SelectedItem?.ToString();
-            //cmd.Parameters.AddWithValue("@category", selectedCategory);
-
-            //SqlDataReader reader = cmd.ExecuteReader();
-            //while (reader.Read())
-            //{
-            //    comboBox1.Items.Add(reader["Pet_Breed"].ToString());
-            //}
-            //con.Close();
-            //DataTable dt = new DataTable();
-            //dt.Load(reader);
-            //dataGridView1.DataSource = dt;
-            //con.Close();
-        }
+      
         public void DisplayBreeddog()
         {
             SqlConnection con = new SqlConnection(haha);
@@ -193,25 +174,7 @@ namespace Pet__Adoption_System
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            //SqlConnection conn = new SqlConnection(haha);
-            //conn.Open();
-            //SqlCommand sqlCommand = new SqlCommand("Insert into product_table (productName, productCategory, productQuantity,  productPrice) VALUES(@name, @category, @quantity, @price)", conn);
-            //sqlCommand.Parameters.AddWithValue("@name", textBox1.Text);
-            //sqlCommand.Parameters.AddWithValue("@category", comboBox1.Text);
-            //sqlCommand.Parameters.AddWithValue("@quantity", textBox2.Text);
-            //sqlCommand.Parameters.AddWithValue("@price", textBox3.Text);
-
-            //sqlCommand.ExecuteNonQuery();
-            //conn.Close();
-
-            //DisplayProduct();
-            //MessageBoxIcon ikun = MessageBoxIcon.Information;
-            //MessageBox.Show("Successfully saved", "Information", MessageBoxButtons.OK, ikun);
-        }
-
+      
 
 
         private void panel11_Paint(object sender, PaintEventArgs e)

@@ -102,7 +102,6 @@
             dataGridView2.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView2.Size = new Size(568, 385);
             dataGridView2.TabIndex = 5;
-
             // 
             // label2
             // 
@@ -160,7 +159,6 @@
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new Size(510, 385);
             dataGridView1.TabIndex = 0;
-          
             // 
             // button1
             // 
@@ -218,7 +216,6 @@
             button4.TabIndex = 5;
             button4.Text = "PAY";
             button4.UseVisualStyleBackColor = false;
-
             // 
             // labelTitle
             // 
@@ -230,9 +227,8 @@
             labelTitle.Name = "labelTitle";
             labelTitle.Size = new Size(1257, 60);
             labelTitle.TabIndex = 6;
-            labelTitle.Text = "Data Management System";
+            labelTitle.Text = "Order";
             labelTitle.TextAlign = ContentAlignment.MiddleCenter;
-
             // 
             // numericUpDown1
             // 
@@ -240,7 +236,6 @@
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(120, 23);
             numericUpDown1.TabIndex = 7;
-            
             // 
             // button5
             // 
@@ -262,6 +257,7 @@
             label4.Size = new Size(154, 30);
             label4.TabIndex = 10;
             label4.Text = "Total Amount:";
+            label4.Click += label4_Click;
             // 
             // Form5
             // 

@@ -48,16 +48,8 @@
             panel18 = new Panel();
             label11 = new Label();
             panel8 = new Panel();
-            panel17 = new Panel();
-            label14 = new Label();
             panel16 = new Panel();
             label13 = new Label();
-            panel15 = new Panel();
-            label15 = new Label();
-            label12 = new Label();
-            panel14 = new Panel();
-            label9 = new Label();
-            label10 = new Label();
             groupBox1 = new GroupBox();
             button1 = new Button();
             panel9 = new Panel();
@@ -77,10 +69,7 @@
             panel1.SuspendLayout();
             panel18.SuspendLayout();
             panel8.SuspendLayout();
-            panel17.SuspendLayout();
             panel16.SuspendLayout();
-            panel15.SuspendLayout();
-            panel14.SuspendLayout();
             groupBox1.SuspendLayout();
             panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -261,11 +250,8 @@
             panel1.BackColor = Color.PeachPuff;
             panel1.Controls.Add(panel18);
             panel1.Controls.Add(panel8);
-            panel1.Controls.Add(panel17);
             panel1.Controls.Add(label8);
             panel1.Controls.Add(panel16);
-            panel1.Controls.Add(panel15);
-            panel1.Controls.Add(panel14);
             panel1.Controls.Add(groupBox1);
             panel1.Location = new Point(181, 22);
             panel1.Name = "panel1";
@@ -303,112 +289,27 @@
             panel8.Size = new Size(443, 37);
             panel8.TabIndex = 6;
             // 
-            // panel17
-            // 
-            panel17.BackColor = Color.FromArgb(64, 0, 0);
-            panel17.Controls.Add(label14);
-            panel17.Location = new Point(542, 52);
-            panel17.Margin = new Padding(3, 2, 3, 2);
-            panel17.Name = "panel17";
-            panel17.Size = new Size(150, 52);
-            panel17.TabIndex = 5;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.ForeColor = SystemColors.ButtonHighlight;
-            label14.Location = new Point(10, 28);
-            label14.Name = "label14";
-            label14.Size = new Size(130, 15);
-            label14.TabIndex = 6;
-            label14.Text = "INVENTORY SUMMARY";
-            // 
             // panel16
             // 
             panel16.BackColor = Color.FromArgb(64, 0, 0);
             panel16.Controls.Add(label13);
-            panel16.Location = new Point(369, 52);
+            panel16.Location = new Point(24, 53);
             panel16.Margin = new Padding(3, 2, 3, 2);
             panel16.Name = "panel16";
-            panel16.Size = new Size(150, 52);
+            panel16.Size = new Size(590, 120);
             panel16.TabIndex = 5;
             // 
             // label13
             // 
             label13.AutoSize = true;
+            label13.Font = new Font("Sitka Text", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label13.ForeColor = SystemColors.ButtonHighlight;
-            label13.Location = new Point(36, 28);
+            label13.Location = new Point(170, 1);
             label13.Name = "label13";
-            label13.Size = new Size(74, 15);
+            label13.Size = new Size(236, 47);
             label13.TabIndex = 5;
             label13.Text = "TOTAL SALES";
             label13.Click += label13_Click;
-            // 
-            // panel15
-            // 
-            panel15.BackColor = Color.FromArgb(64, 0, 0);
-            panel15.Controls.Add(label15);
-            panel15.Controls.Add(label12);
-            panel15.Location = new Point(196, 52);
-            panel15.Margin = new Padding(3, 2, 3, 2);
-            panel15.Name = "panel15";
-            panel15.Size = new Size(150, 52);
-            panel15.TabIndex = 5;
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label15.ForeColor = SystemColors.ButtonHighlight;
-            label15.Location = new Point(56, 12);
-            label15.Name = "label15";
-            label15.Size = new Size(32, 17);
-            label15.TabIndex = 3;
-            label15.Text = "pug";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.ForeColor = SystemColors.ButtonHighlight;
-            label12.Location = new Point(27, 28);
-            label12.Name = "label12";
-            label12.Size = new Size(88, 15);
-            label12.TabIndex = 4;
-            label12.Text = "BEST PRODUCT";
-            label12.Click += label12_Click;
-            // 
-            // panel14
-            // 
-            panel14.BackColor = Color.FromArgb(64, 0, 0);
-            panel14.Controls.Add(label9);
-            panel14.Controls.Add(label10);
-            panel14.Location = new Point(24, 52);
-            panel14.Margin = new Padding(3, 2, 3, 2);
-            panel14.Name = "panel14";
-            panel14.Size = new Size(153, 52);
-            panel14.TabIndex = 4;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label9.ForeColor = SystemColors.ButtonHighlight;
-            label9.Location = new Point(56, 12);
-            label9.Name = "label9";
-            label9.Size = new Size(34, 17);
-            label9.TabIndex = 2;
-            label9.Text = "Dog";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.ForeColor = SystemColors.ButtonHighlight;
-            label10.Location = new Point(26, 29);
-            label10.Name = "label10";
-            label10.Size = new Size(96, 15);
-            label10.TabIndex = 1;
-            label10.Text = " BEST CATEGORY";
-            label10.Click += label10_Click;
             // 
             // groupBox1
             // 
@@ -534,14 +435,8 @@
             panel18.PerformLayout();
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
-            panel17.ResumeLayout(false);
-            panel17.PerformLayout();
             panel16.ResumeLayout(false);
             panel16.PerformLayout();
-            panel15.ResumeLayout(false);
-            panel15.PerformLayout();
-            panel14.ResumeLayout(false);
-            panel14.PerformLayout();
             groupBox1.ResumeLayout(false);
             panel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -571,20 +466,12 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
-        private Label label10;
         private GroupBox groupBox1;
         private Button button1;
-        private Panel panel17;
         private Panel panel16;
-        private Panel panel15;
-        private Panel panel14;
         private Panel panel18;
         private Label label11;
         private Panel panel8;
-        private Label label12;
-        private Label label14;
         private Label label13;
-        private Label label15;
-        private Label label9;
     }
 }

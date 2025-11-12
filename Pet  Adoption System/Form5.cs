@@ -9,6 +9,9 @@ namespace Pet__Adoption_System
 {
     public partial class Form5 : Form
     {
+
+
+
         string connectionString = @"Data Source=DESKTOP-RPJP9D9\SQLEXPRESS;Initial Catalog=julzz;Integrated Security=True;Trust Server Certificate=True";
 
         // Global variables
@@ -295,7 +298,7 @@ namespace Pet__Adoption_System
                                 "Order Successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                             // Show receipt
-                            
+
 
                             // Reset form
                             ResetOrderForm();
@@ -334,12 +337,12 @@ namespace Pet__Adoption_System
             label4.Text = $"Total Amount: ${totalAmount:F2}";
         }
 
-      ////  private void ShowReceipt(int orderId, string customerName)
-      //  {
-      //      // Create receipt form with order details
-      //       Receipt receiptForm = new Receipt(orderId, customerName, totalAmount, orderItemsTable.Copy());
-      //  receiptForm.Show();
-      //  }
+        ////  private void ShowReceipt(int orderId, string customerName)
+        //  {
+        //      // Create receipt form with order details
+        //       Receipt receiptForm = new Receipt(orderId, customerName, totalAmount, orderItemsTable.Copy());
+        //  receiptForm.Show();
+        //  }
 
         private void ResetOrderForm()
         {
@@ -437,6 +440,11 @@ namespace Pet__Adoption_System
             Form2 f2 = new Form2();
             f2.Show();
             this.Hide();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
