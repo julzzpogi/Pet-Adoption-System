@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            panel2 = new Panel();
-            pictureBox1 = new PictureBox();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             label2 = new Label();
@@ -46,16 +44,20 @@
             panel4 = new Panel();
             panel8 = new Panel();
             panel7 = new Panel();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel2 = new Panel();
+            pictureBox6 = new PictureBox();
+            checkBox1 = new CheckBox();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panel1.SuspendLayout();
+            panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
+<<<<<<< HEAD
             // panel2
             // 
             panel2.BackColor = Color.PeachPuff;
@@ -77,6 +79,8 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+=======
+>>>>>>> faaa46d55d62cc95cb41dab32c23a2f1683c8969
             // textBox1
             // 
             textBox1.BackColor = Color.PeachPuff;
@@ -165,8 +169,12 @@
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
+<<<<<<< HEAD
             pictureBox5.Location = new Point(460, 88);
             pictureBox5.Margin = new Padding(3, 2, 3, 2);
+=======
+            pictureBox5.Location = new Point(526, 115);
+>>>>>>> faaa46d55d62cc95cb41dab32c23a2f1683c8969
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(130, 100);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -186,7 +194,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.Sienna;
+            panel1.BackColor = Color.PeachPuff;
             panel1.Controls.Add(panel5);
             panel1.Location = new Point(5, 9);
             panel1.Margin = new Padding(3, 2, 3, 2);
@@ -204,30 +212,75 @@
             // 
             // panel4
             // 
+<<<<<<< HEAD
             panel4.BackColor = Color.Sienna;
             panel4.Location = new Point(692, 9);
             panel4.Margin = new Padding(3, 2, 3, 2);
+=======
+            panel4.BackColor = Color.PeachPuff;
+            panel4.Location = new Point(791, 12);
+>>>>>>> faaa46d55d62cc95cb41dab32c23a2f1683c8969
             panel4.Name = "panel4";
             panel4.Size = new Size(9, 359);
             panel4.TabIndex = 14;
             // 
             // panel8
             // 
+<<<<<<< HEAD
             panel8.BackColor = Color.Sienna;
             panel8.Location = new Point(5, 363);
             panel8.Margin = new Padding(3, 2, 3, 2);
+=======
+            panel8.BackColor = Color.PeachPuff;
+            panel8.Location = new Point(6, 484);
+>>>>>>> faaa46d55d62cc95cb41dab32c23a2f1683c8969
             panel8.Name = "panel8";
             panel8.Size = new Size(696, 8);
             panel8.TabIndex = 17;
             // 
             // panel7
             // 
+<<<<<<< HEAD
             panel7.BackColor = Color.Sienna;
             panel7.Location = new Point(5, 5);
             panel7.Margin = new Padding(3, 2, 3, 2);
+=======
+            panel7.BackColor = Color.PeachPuff;
+            panel7.Controls.Add(panel2);
+            panel7.Location = new Point(6, 7);
+>>>>>>> faaa46d55d62cc95cb41dab32c23a2f1683c8969
             panel7.Name = "panel7";
             panel7.Size = new Size(696, 8);
             panel7.TabIndex = 16;
+            // 
+            // panel2
+            // 
+            panel2.Location = new Point(717, 9);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(250, 125);
+            panel2.TabIndex = 0;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
+            pictureBox6.Location = new Point(9, 12);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(792, 482);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 18;
+            pictureBox6.TabStop = false;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            checkBox1.ForeColor = SystemColors.ButtonHighlight;
+            checkBox1.Location = new Point(479, 393);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(125, 21);
+            checkBox1.TabIndex = 10;
+            checkBox1.Text = "Show Password";
+            checkBox1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -246,14 +299,12 @@
             Controls.Add(label2);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Controls.Add(panel2);
             Controls.Add(panel1);
+            Controls.Add(pictureBox6);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
-            panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -261,18 +312,18 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panel1.ResumeLayout(false);
+            panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private Panel panel2;
         private TextBox textBox1;
         private TextBox textBox2;
         private Label label2;
         private Button button1;
         private Panel panel3;
-        private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
@@ -283,5 +334,8 @@
         private Panel panel4;
         private Panel panel8;
         private Panel panel7;
+        private PictureBox pictureBox6;
+        private Panel panel2;
+        private CheckBox checkBox1;
     }
 }

@@ -165,6 +165,10 @@
             // 
             // textBox1
             // 
+
+            textBox1.Location = new Point(14, 40);
+            textBox1.Margin = new Padding(3, 4, 3, 4);
+
             textBox1.Location = new Point(12, 31);
             textBox1.Name = "textBox1";
             textBox1.PlaceholderText = "Search an item by Name and breed...";
