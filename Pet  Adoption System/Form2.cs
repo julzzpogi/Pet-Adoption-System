@@ -221,10 +221,15 @@ namespace Pet__Adoption_System
         private void label6_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Changes saved successfully.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-          
+
             Form1 form1 = new Form1();
             form1.Show();
             this.Hide();
+
+        }
+
+        private void panel7_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }
