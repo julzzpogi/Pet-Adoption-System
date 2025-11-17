@@ -137,6 +137,7 @@ namespace Pet__Adoption_System
             Form3 form3 = new Form3();
             form3.Show();
             this.Hide();
+            //haha
         }
 
         private void label8_Click(object sender, EventArgs e)
