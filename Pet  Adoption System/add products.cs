@@ -20,7 +20,7 @@ namespace Pet__Adoption_System
             InitializeComponent();
             DisplayCategory();
             DisplaySex();
-            
+
 
         }
 
@@ -60,7 +60,8 @@ namespace Pet__Adoption_System
             MessageBoxIcon ikun = MessageBoxIcon.Information;
             MessageBox.Show("Successfully saved", "Information", MessageBoxButtons.OK, ikun);
         }
-        public void DisplayCategory() {
+        public void DisplayCategory()
+        {
             SqlConnection con = new SqlConnection(haha);
             con.Open();
             SqlCommand cmd = new SqlCommand("SELECT DISTINCT Pet_Category FROM Pettable", con);
@@ -70,7 +71,7 @@ namespace Pet__Adoption_System
                 comboBox1.Items.Add(reader["Pet_Category"].ToString());
             }
             con.Close();
-            
+
         }
         public void DisplaySex()
         {
@@ -92,7 +93,7 @@ namespace Pet__Adoption_System
             SqlCommand cmd = new SqlCommand("SELECT  Pet_Breed FROM Pettable where Pet_Category = @category", con);
             string selectedCategory = comboBox1.SelectedItem?.ToString();
             cmd.Parameters.AddWithValue("@category", selectedCategory);
-            
+
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             {
@@ -109,17 +110,22 @@ namespace Pet__Adoption_System
 
         private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
-            form2.Show();
+            Form4 form4 = new Form4();
+            form4.Show();
             this.Hide();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void numericUpDown3_ValueChanged(object sender, EventArgs e)
         {
 
         }

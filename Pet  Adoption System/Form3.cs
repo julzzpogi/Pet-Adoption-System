@@ -66,13 +66,13 @@ namespace Pet__Adoption_System
 
             SqlConnection con = new SqlConnection(haha);
             con.Open();
-            SqlCommand cmd = new SqlCommand("SELECT * FROM Ordertbl", con);
+            SqlCommand cmd = new SqlCommand("select * from Ordertbl", con);
             SqlDataReader reader = cmd.ExecuteReader();
             DataTable dt = new DataTable();
             dt.Load(reader);
             dataGridView1.DataSource = dt;
             con.Close();
-
+           // dataGridView1.Columns["Order_ID"].Visible = false;
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -134,18 +134,24 @@ namespace Pet__Adoption_System
 
         private void label6_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Successfully Logout.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            Form1 form1 = new Form1();
+            form1.Show();
+            this.Hide();
 
         }
 
         private void label6_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("Successfully Logout.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Form1 form1 = new Form1();
-            form1.Show();
-            this.Hide();
+
         }
 
         private void panel7_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

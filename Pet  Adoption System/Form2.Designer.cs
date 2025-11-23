@@ -80,18 +80,18 @@
             panel2.BackColor = Color.FromArgb(64, 0, 0);
             panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(label1);
-            panel2.Location = new Point(11, 165);
-            panel2.Margin = new Padding(3, 4, 3, 4);
+            panel2.Location = new Point(10, 124);
             panel2.Name = "panel2";
-            panel2.Size = new Size(144, 52);
+            panel2.Size = new Size(126, 39);
             panel2.TabIndex = 0;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(3, 3);
+            pictureBox2.Location = new Point(3, 2);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(36, 42);
+            pictureBox2.Size = new Size(32, 32);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -101,9 +101,9 @@
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = SystemColors.ButtonFace;
-            label1.Location = new Point(38, 16);
+            label1.Location = new Point(33, 12);
             label1.Name = "label1";
-            label1.Size = new Size(96, 20);
+            label1.Size = new Size(82, 17);
             label1.TabIndex = 5;
             label1.Text = " Dashboard";
             label1.Click += label1_Click;
@@ -114,10 +114,9 @@
             panel3.Controls.Add(pictureBox3);
             panel3.Controls.Add(label3);
             panel3.Controls.Add(label2);
-            panel3.Location = new Point(11, 231);
-            panel3.Margin = new Padding(3, 4, 3, 4);
+            panel3.Location = new Point(10, 173);
             panel3.Name = "panel3";
-            panel3.Size = new Size(144, 48);
+            panel3.Size = new Size(126, 36);
             panel3.TabIndex = 6;
             panel3.Click += label2_Click;
             panel3.Paint += panel3_Paint;
@@ -125,9 +124,10 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(5, 3);
+            pictureBox3.Location = new Point(4, 2);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(34, 43);
+            pictureBox3.Size = new Size(30, 32);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 8;
             pictureBox3.TabStop = false;
@@ -138,9 +138,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.ButtonFace;
-            label3.Location = new Point(8, 15);
+            label3.Location = new Point(7, 11);
             label3.Name = "label3";
-            label3.Size = new Size(0, 20);
+            label3.Size = new Size(0, 17);
             label3.TabIndex = 7;
             // 
             // label2
@@ -148,9 +148,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.ButtonFace;
-            label2.Location = new Point(50, 13);
+            label2.Location = new Point(44, 10);
             label2.Name = "label2";
-            label2.Size = new Size(76, 20);
+            label2.Size = new Size(66, 17);
             label2.TabIndex = 6;
             label2.Text = "Inventory";
             label2.Click += label2_Click;
@@ -160,19 +160,20 @@
             panel5.BackColor = Color.FromArgb(64, 0, 0);
             panel5.Controls.Add(pictureBox6);
             panel5.Controls.Add(label4);
-            panel5.Location = new Point(11, 295);
-            panel5.Margin = new Padding(3, 4, 3, 4);
+            panel5.Location = new Point(10, 221);
             panel5.Name = "panel5";
-            panel5.Size = new Size(144, 52);
+            panel5.Size = new Size(126, 39);
             panel5.TabIndex = 6;
+            panel5.Click += label4_Click;
             panel5.Paint += panel5_Paint;
             // 
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(10, 12);
+            pictureBox6.Location = new Point(9, 9);
+            pictureBox6.Margin = new Padding(3, 2, 3, 2);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(31, 33);
+            pictureBox6.Size = new Size(27, 25);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 12;
             pictureBox6.TabStop = false;
@@ -183,9 +184,9 @@
             label4.AutoSize = true;
             label4.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.ButtonFace;
-            label4.Location = new Point(52, 17);
+            label4.Location = new Point(46, 13);
             label4.Name = "label4";
-            label4.Size = new Size(46, 20);
+            label4.Size = new Size(39, 17);
             label4.TabIndex = 9;
             label4.Text = "Logs";
             label4.Click += label4_Click;
@@ -195,10 +196,9 @@
             panel7.BackColor = Color.FromArgb(64, 0, 0);
             panel7.Controls.Add(pictureBox7);
             panel7.Controls.Add(label6);
-            panel7.Location = new Point(11, 367);
-            panel7.Margin = new Padding(3, 4, 3, 4);
+            panel7.Location = new Point(10, 275);
             panel7.Name = "panel7";
-            panel7.Size = new Size(144, 52);
+            panel7.Size = new Size(126, 39);
             panel7.TabIndex = 7;
             panel7.Click += label6_Click;
             panel7.Paint += panel7_Paint;
@@ -206,9 +206,10 @@
             // pictureBox7
             // 
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(11, 11);
+            pictureBox7.Location = new Point(10, 8);
+            pictureBox7.Margin = new Padding(3, 2, 3, 2);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(31, 33);
+            pictureBox7.Size = new Size(27, 25);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 11;
             pictureBox7.TabStop = false;
@@ -218,9 +219,9 @@
             label6.AutoSize = true;
             label6.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label6.ForeColor = SystemColors.ButtonFace;
-            label6.Location = new Point(50, 16);
+            label6.Location = new Point(44, 12);
             label6.Name = "label6";
-            label6.Size = new Size(60, 20);
+            label6.Size = new Size(52, 17);
             label6.TabIndex = 11;
             label6.Text = "Logout";
             label6.Click += label6_Click;
@@ -230,9 +231,9 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe Print", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = SystemColors.ButtonHighlight;
-            label7.Location = new Point(8, 11);
+            label7.Location = new Point(7, 8);
             label7.Name = "label7";
-            label7.Size = new Size(492, 31);
+            label7.Size = new Size(415, 26);
             label7.TabIndex = 0;
             label7.Text = "\" Happiness Starts  With A Wag, A Pur, Or A Chirp\"\r\n";
             label7.Click += label7_Click;
@@ -241,9 +242,9 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(212, 20);
+            label8.Location = new Point(186, 15);
             label8.Name = "label8";
-            label8.Size = new Size(289, 29);
+            label8.Size = new Size(236, 24);
             label8.TabIndex = 5;
             label8.Text = "🐾 Furry And Friends 🐾";
             label8.Click += label8_Click;
@@ -256,19 +257,19 @@
             panel1.Controls.Add(label8);
             panel1.Controls.Add(panel16);
             panel1.Controls.Add(groupBox1);
-            panel1.Location = new Point(207, 29);
-            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Location = new Point(181, 22);
             panel1.Name = "panel1";
-            panel1.Size = new Size(1046, 600);
+            panel1.Size = new Size(915, 450);
             panel1.TabIndex = 0;
             // 
             // panel18
             // 
             panel18.BackColor = Color.FromArgb(128, 64, 64);
             panel18.Controls.Add(label11);
-            panel18.Location = new Point(27, 9);
+            panel18.Location = new Point(24, 7);
+            panel18.Margin = new Padding(3, 2, 3, 2);
             panel18.Name = "panel18";
-            panel18.Size = new Size(157, 49);
+            panel18.Size = new Size(137, 37);
             panel18.TabIndex = 7;
             // 
             // label11
@@ -276,9 +277,9 @@
             label11.AutoSize = true;
             label11.Font = new Font("Segoe Print", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label11.ForeColor = SystemColors.ButtonHighlight;
-            label11.Location = new Point(11, 11);
+            label11.Location = new Point(10, 8);
             label11.Name = "label11";
-            label11.Size = new Size(135, 31);
+            label11.Size = new Size(116, 26);
             label11.TabIndex = 0;
             label11.Text = "DASHBOARD";
             // 
@@ -286,18 +287,20 @@
             // 
             panel8.BackColor = Color.FromArgb(128, 64, 64);
             panel8.Controls.Add(label7);
-            panel8.Location = new Point(523, 9);
+            panel8.Location = new Point(458, 7);
+            panel8.Margin = new Padding(3, 2, 3, 2);
             panel8.Name = "panel8";
-            panel8.Size = new Size(506, 49);
+            panel8.Size = new Size(443, 37);
             panel8.TabIndex = 6;
             // 
             // panel16
             // 
             panel16.BackColor = Color.FromArgb(64, 0, 0);
             panel16.Controls.Add(label13);
-            panel16.Location = new Point(125, 203);
+            panel16.Location = new Point(109, 152);
+            panel16.Margin = new Padding(3, 2, 3, 2);
             panel16.Name = "panel16";
-            panel16.Size = new Size(733, 272);
+            panel16.Size = new Size(641, 204);
             panel16.TabIndex = 5;
             // 
             // label13
@@ -305,9 +308,9 @@
             label13.AutoSize = true;
             label13.Font = new Font("Sitka Text", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label13.ForeColor = SystemColors.ButtonHighlight;
-            label13.Location = new Point(224, 28);
+            label13.Location = new Point(196, 21);
             label13.Name = "label13";
-            label13.Size = new Size(294, 58);
+            label13.Size = new Size(236, 47);
             label13.TabIndex = 5;
             label13.Text = "TOTAL SALES";
             label13.Click += label13_Click;
@@ -318,9 +321,11 @@
             groupBox1.Controls.Add(button1);
             groupBox1.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             groupBox1.ForeColor = Color.Black;
-            groupBox1.Location = new Point(848, 71);
+            groupBox1.Location = new Point(742, 53);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(171, 68);
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(150, 51);
             groupBox1.TabIndex = 3;
             groupBox1.TabStop = false;
             groupBox1.Text = "For Walk-in";
@@ -328,9 +333,10 @@
             // button1
             // 
             button1.Font = new Font("Palatino Linotype", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.Location = new Point(45, 27);
+            button1.Location = new Point(39, 20);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(82, 22);
             button1.TabIndex = 0;
             button1.Text = "Walk-ins";
             button1.UseVisualStyleBackColor = true;
@@ -344,18 +350,18 @@
             panel9.Controls.Add(panel2);
             panel9.Controls.Add(panel3);
             panel9.Controls.Add(panel5);
-            panel9.Location = new Point(26, 29);
-            panel9.Margin = new Padding(3, 4, 3, 4);
+            panel9.Location = new Point(23, 22);
             panel9.Name = "panel9";
-            panel9.Size = new Size(174, 599);
+            panel9.Size = new Size(152, 449);
             panel9.TabIndex = 10;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(2, 15);
+            pictureBox1.Location = new Point(2, 11);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(168, 131);
+            pictureBox1.Size = new Size(147, 98);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 10;
             pictureBox1.TabStop = false;
@@ -363,42 +369,46 @@
             // panel10
             // 
             panel10.BackColor = Color.Sienna;
-            panel10.Location = new Point(11, 9);
+            panel10.Location = new Point(10, 7);
+            panel10.Margin = new Padding(3, 2, 3, 2);
             panel10.Name = "panel10";
-            panel10.Size = new Size(1249, 11);
+            panel10.Size = new Size(1093, 8);
             panel10.TabIndex = 11;
             panel10.Paint += panel10_Paint;
             // 
             // panel11
             // 
             panel11.BackColor = Color.Sienna;
-            panel11.Location = new Point(11, 637);
+            panel11.Location = new Point(10, 478);
+            panel11.Margin = new Padding(3, 2, 3, 2);
             panel11.Name = "panel11";
-            panel11.Size = new Size(1258, 11);
+            panel11.Size = new Size(1101, 8);
             panel11.TabIndex = 12;
             // 
             // panel12
             // 
             panel12.BackColor = Color.Sienna;
-            panel12.Location = new Point(7, 9);
+            panel12.Location = new Point(6, 7);
+            panel12.Margin = new Padding(3, 2, 3, 2);
             panel12.Name = "panel12";
-            panel12.Size = new Size(10, 639);
+            panel12.Size = new Size(9, 479);
             panel12.TabIndex = 10;
             // 
             // panel13
             // 
             panel13.BackColor = Color.Sienna;
-            panel13.Location = new Point(1259, 9);
+            panel13.Location = new Point(1102, 7);
+            panel13.Margin = new Padding(3, 2, 3, 2);
             panel13.Name = "panel13";
-            panel13.Size = new Size(10, 636);
+            panel13.Size = new Size(9, 477);
             panel13.TabIndex = 6;
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(64, 0, 0);
-            ClientSize = new Size(1278, 657);
+            ClientSize = new Size(1118, 493);
             Controls.Add(panel13);
             Controls.Add(panel12);
             Controls.Add(panel11);
@@ -406,7 +416,6 @@
             Controls.Add(panel9);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Form2";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form2";

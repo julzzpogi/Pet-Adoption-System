@@ -293,9 +293,11 @@
             // 
             numericUpDown3.Location = new Point(20, 296);
             numericUpDown3.Margin = new Padding(3, 2, 3, 2);
+            numericUpDown3.Maximum = new decimal(new int[] { 100000000, 0, 0, 0 });
             numericUpDown3.Name = "numericUpDown3";
             numericUpDown3.Size = new Size(251, 23);
             numericUpDown3.TabIndex = 10;
+            numericUpDown3.ValueChanged += numericUpDown3_ValueChanged;
             // 
             // label2
             // 

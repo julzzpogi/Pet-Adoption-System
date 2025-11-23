@@ -226,14 +226,14 @@ namespace Pet__Adoption_System
 
         private void label13_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
-            form3.Show();
-            this.Hide();
+            
 
         }
 
         private void label4_Click(object sender, EventArgs e)
-        {
+        {Form3 form3 = new Form3();
+            form3.Show();
+            this.Hide();
 
         }
 
